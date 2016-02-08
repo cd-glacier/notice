@@ -30,9 +30,20 @@ get '/test' do
 	url = "http://urasunday.com/bloodbone/index.html" 
 
 	#mail通知
+	Mail.defaults do
+		delivery_method :smtp, {
+			:address => "smtp.gmail.com",
+			:port => 587,
+			:domain => 'gmail.com',
+			:user_name => 'hyoga0216@gmail.com',
+			:password => 'dnjlqwsqavrwodds',
+			:authentication => 'plain',
+			:enable_starttls_auto => true
+		}
+	end
 	mail = Mail.new do
 		from "hyoga0216@gmail.com"
-		to "hyoga0216@gmal.com"
+		to "hyoga0216@gmail.com"
 		subject "notice web"
 		body "銀狼ブラッドボーン22話が更新されました！"
 	end
@@ -44,15 +55,9 @@ get '/test' do
 		node.each do |f|
 			if node.text.include?(search_word) then
 				#メール通知
-				mail.delivery_method(:smtp,
-					address:        "localhost",
-					port:           4567,
-					domain:         "localhost.localdomain",
-					authentication: nil,
-					user_name:      nil,
-					password:       nil
-				)
-				mail.deliver
+				mail.charset = "UTF-8"
+				mail.content_transfer_encoding = "8bit"
+        mail.deliver
 				@result = true
 			end
 		end
