@@ -15,7 +15,7 @@ $(function() {
 		var offset = $(target).offset().top;
 		
 		$("body, html").animate({
-			scrollTop: offset - 100 
+			scrollTop: offset - 180 
 		}, 1000);
 	});
 });

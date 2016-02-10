@@ -1,4 +1,5 @@
 body {
+	background-color: #F2F2F2;
 	/*padding: 25% 0 5% 0;*/
 	margin: 0;
 }
@@ -62,27 +63,56 @@ li {
 
 }
 
-#main {
-	margin-top: 0.3%;
-}
 
-#notice, #about, #usage, #contact {
-	background-color: #F2F2F2;
+#notice, #about, #contact {
 	width: 100%;
 	text-align: center;
+	margin: 70 0;
 } 
+
+#usage {
+
+}
 
 h2 {
 	color: #E08170;
-	margin-top: 	display: inline-block;
+	margin: 10 10 10 0;
+	display: inline-block;
 	font-size: 50;
+}
+
+p {
+	display: inline-block;
+	color: #E08170;
+	margin: 0;
+	font-size: 30;
 }
 
 .contents {
 	position: relative;
 	width: 60%;
-	margin: 0 auto;
+	margin: 70px auto;
 	text-align: left;
+}
+
+.img_div {
+	float: left;
+}
+
+.first_sentence {
+	float: none;
+	margin: auto 0;
+}
+
+.para {
+	display: block;
+	color: #5E5D5D;
+	font-size: 20;
+}
+
+#hoge {
+	width: 100%
+	height: 1;
 }
 
 
