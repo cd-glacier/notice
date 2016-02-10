@@ -6,7 +6,7 @@ body {
 
 .header_top {
 	background-color: #E08170;
-	height: 25%;
+	height: 185;
 	width: 100%;
 }
 
@@ -14,14 +14,14 @@ body {
 	color: #F2F2F2;
 	text-align: center;
 	font-size: 123px;
-	padding-top: 2.5%;
+	padding-top: 20;
 	margin: 0;
 }
 
 .fixbar {
 	position: fixed;
 	background-color: #E08170;
-	height: 12%;
+	height: 95;
 	width: 100%;
 	visibility: hidden;
 }
@@ -60,7 +60,7 @@ li {
 
 .footer {
 	background-color: #E08170;
-	height: 3%;
+	height: 25;
 	width: 100%;
 
 }
@@ -118,10 +118,15 @@ p {
 }
 
 .btn-large {
-	background-color:  #E08170
+	background-color:  #E08170;
 }
 .btn-large:hover {
-	background-color:  #E08170
+	background-color:  #E08170;
 }
 
-
+.colored {
+	color: #E08170;
+}
+.colored:hover {
+	color: #E08170;
+}
