@@ -19,7 +19,7 @@ body {
 .fixbar {
 	position: fixed;
 	background-color: #E08170;
-	height: 8%;
+	height: 10%;
 	width: 100%;
 	visibility: hidden;
 }
@@ -31,17 +31,15 @@ body {
 }
 
 .fixed {
+	z-index: 10000;
 	visibility: visible;
 }
 
-.tab {
+.link_div {
 	float: left;
-	color: #F2F2F2;
-	text-decoration: none;
 }
 
-.tab_last {
-	float: none;
+.link{
 	color: #F2F2F2;
 	text-decoration: none;
 }
@@ -57,17 +55,34 @@ li {
 	text-align: center;
 }
 
-.notice, .about, .usage, .contact {
-	background-color: #F2F2F2;
-	height: 90%;
+.footer {
+	background-color: #E08170;
+	height: 3%;
 	width: 100%;
+
+}
+
+#main {
+	margin-top: 0.3%;
+}
+
+#notice, #about, #usage, #contact {
+	background-color: #F2F2F2;
+	width: 100%;
+	text-align: center;
 } 
 
+h2 {
+	color: #E08170;
+	margin-top: 	display: inline-block;
+	font-size: 50;
+}
 
-
-
-
-
-
+.contents {
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+	text-align: left;
+}
 
 
