@@ -6,13 +6,6 @@ require "sinatra/reloader" if development?
 
 require 'mysql'
 
-require 'nokogiri'
-require 'open-uri'
-
-require 'json'
-
-require 'mail'
-
 #mysql
 client= Mysql.connect('localhost', 'root', nil, 'notice')
 stmt = client.query('create table if not exists sites (
@@ -37,4 +30,5 @@ end
 
 post '/contact' do
 	gmail(params[:contact_email], params[:message])	
+	redirect "/home"
 end

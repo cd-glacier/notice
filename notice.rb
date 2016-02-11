@@ -1,12 +1,11 @@
 require './pass.rb'
-require 'active_record'
 
 require 'nokogiri'
 require 'open-uri'
 
-require 'json'
-
 require 'mail'
+
+require 'mysql'
 
 #########################################################################################
 
@@ -37,6 +36,17 @@ def gmail(from_adress, content)
 
 end
 
+def delete_url(email, url)
+	stmt = client.prepare("delete from notice where email = ? and url = ?")
+	stmt.execute email, url
+end
+
+#連番をどう処理しようかしら
+def apdate_url(email, url)
+	stmt = client.prepare("update notice set keyword = ? where email = ? and url = ?")
+	stmt.execute next_word, email, url
+end
+
 
 def notice(url, search_word)
 	#検索ワード＆検索ページ
@@ -51,6 +61,7 @@ def notice(url, search_word)
 		node.each do |f|
 			if node.text.include?(search_word) then
 				email("hyoga0216@gmail.com", "銀狼ブラッドボーンが更新されました！")
+								
 			end
 		end
 	end
