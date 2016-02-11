@@ -13,3 +13,6 @@ gem "nokogiri"
 
 gem "mail"
 
+gem "rack"
+
+gem "heroku"
