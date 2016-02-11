@@ -1,3 +1,4 @@
+require './pass.rb'
 require 'active_record'
 
 require 'nokogiri'
@@ -21,7 +22,7 @@ def notice(url, search_word)
 			:port => 587,
 			:domain => 'gmail.com',
 			:user_name => 'hyoga0216@gmail.com',
-			:password => 'dnjlqwsqavrwodds',
+			:password => @pass,
 			:authentication => 'plain',
 			:enable_starttls_auto => true
 		}
