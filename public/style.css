@@ -93,7 +93,7 @@ p {
 .contents {
 	position: relative;
 	width: 60%;
-	margin: 70px auto;
+	margin: 100px auto;
 	text-align: left;
 }
 
@@ -124,9 +124,3 @@ p {
 	background-color:  #E08170;
 }
 
-.colored {
-	color: #E08170;
-}
-.colored:hover {
-	color: #E08170;
-}
