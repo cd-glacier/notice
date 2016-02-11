@@ -7,7 +7,6 @@ gem 'sinatra-contrib'
 gem 'json'
 
 gem "mysql"
-gem "activerecord"
 
 gem "nokogiri"
 

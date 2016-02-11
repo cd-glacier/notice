@@ -3,7 +3,7 @@ require "rubygems"
 require "sinatra"
 require "sinatra/reloader" if development?
 
-require 'active_record'
+require 'mysql'
 
 require 'nokogiri'
 require 'open-uri'
@@ -12,13 +12,14 @@ require 'json'
 
 require 'mail'
 
-=begin
-ActiveRecord::Base.configurations = YAML.load_file('database.yml')
-ActiveRecord::Base.establish_connection('development')
+#mysql
+client= Mysql.connect('localhost', 'root', nil, 'notice')
+stmt = client.query('create table if not exists sites (
+										keyword varchar(255),
+										url varchar(255),
+										email varchar(255)
+										)')
 
-class Memos < ActiveRecord::Base
-end
-=end
 
 #########################################################################################
 
@@ -26,3 +27,9 @@ get '/home' do
 	erb :home
 end
 
+post '/notice' do
+	stmt = client.prepare("insert into sites values(?, ?, ?)")
+	stmt.execute params[:keyword], params[:url], params[:email]
+	
+	redirect "/home"	
+end

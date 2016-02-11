@@ -20,4 +20,28 @@ $(function() {
 	});
 });
 
+$(function(){
+	$('#notice_button').click(function(e){
+		e.preventDefault();
+		var js_keyword = $(":text[id='keyword']").val();
+		var js_url = $("#url").val();
+		var js_email = $("#email").val();
+		$.ajax({
+			type: 'POST',
+			url: '/notice',
+			data: {
+				keyword: js_keyword,
+				url: js_url,
+				email: js_email
+			},
+			success: function(json){
+				console.log(js_keyword);
+				console.log(js_url);
+				console.log(js_email);
+				alert("hoge");
+			}
+		});
+	});
+});
+
 

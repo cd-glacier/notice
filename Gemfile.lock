@@ -1,23 +1,8 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activemodel (4.2.5.1)
-      activesupport (= 4.2.5.1)
-      builder (~> 3.1)
-    activerecord (4.2.5.1)
-      activemodel (= 4.2.5.1)
-      activesupport (= 4.2.5.1)
-      arel (~> 6.0)
-    activesupport (4.2.5.1)
-      i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
-      tzinfo (~> 1.1)
     addressable (2.4.0)
-    arel (6.0.3)
     backports (3.6.8)
-    builder (3.2.2)
     daemons (1.2.3)
     eventmachine (1.0.9.1)
     excon (0.45.4)
@@ -33,7 +18,6 @@ GEM
     heroku-api (0.3.23)
       excon (~> 0.44)
       multi_json (~> 1.8)
-    i18n (0.7.0)
     json (1.8.3)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -41,7 +25,6 @@ GEM
       mime-types (>= 1.16, < 3)
     mime-types (1.25.1)
     mini_portile2 (2.0.0)
-    minitest (5.8.4)
     multi_json (1.11.2)
     mysql (2.9.1)
     net-ssh (2.9.2)
@@ -76,16 +59,12 @@ GEM
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (~> 1.0)
-    thread_safe (0.3.5)
     tilt (2.0.2)
-    tzinfo (1.2.2)
-      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord
   heroku
   json
   mail
