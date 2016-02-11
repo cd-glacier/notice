@@ -38,10 +38,30 @@ $(function(){
 				console.log(js_keyword);
 				console.log(js_url);
 				console.log(js_email);
-				alert("hoge");
+				alert("正常に操作が完了しました。");
 			}
 		});
 	});
 });
 
+$(function(){
+	$('#contact_button').click(function(e){
+		e.preventDefault();
+		var js_contact_email = $("#contact_email").val();
+		var js_message = $("#message").val();
+		$.ajax({
+			type: 'POST',
+			url: '/contact',
+			data: {
+				contact_email: js_contact_email,
+				message: js_message
+			},
+			success: function(json){
+				console.log(js_contact_email);
+				console.log(js_message);
+				alert("製作者にメッセージを送信しました。");
+			}
+		});
+	});
+});
 

@@ -1,4 +1,5 @@
 #encode utf-8
+require "./notice.rb"
 require "rubygems"
 require "sinatra"
 require "sinatra/reloader" if development?
@@ -32,4 +33,8 @@ post '/notice' do
 	stmt.execute params[:keyword], params[:url], params[:email]
 	
 	redirect "/home"	
+end
+
+post '/contact' do
+	gmail(params[:contact_email], params[:message])	
 end
