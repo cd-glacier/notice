@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'thin'
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'unicorn'
 
 gem 'json'
 
@@ -14,4 +14,5 @@ gem "mail"
 
 gem "rack"
 
-gem "heroku"
+gem "clockwork"
+

@@ -1,5 +1,6 @@
-require 'bundler'
-Bundler.require
+require "rubygems"
+require "sinatra"
 
-require './app'
-run Sinatra::Application
+require File.expand_path '../app.rb', __FILE__
+
+run NoticeWeb

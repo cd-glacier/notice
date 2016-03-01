@@ -4,12 +4,10 @@ require 'nokogiri'
 require 'open-uri'
 
 require 'mail'
-
 require 'mysql'
 
 #########################################################################################
 
-#mail通知
 def gmail(from_adress, content)
 	Mail.defaults do
 		delivery_method :smtp, {
@@ -29,7 +27,6 @@ def gmail(from_adress, content)
 		body content
 	end
 
-	#メール通知
 	mail.charset = "UTF-8"
 	mail.content_transfer_encoding = "8bit"
 	mail.deliver
@@ -41,7 +38,6 @@ def delete_url(email, url)
 	stmt.execute email, url
 end
 
-#連番をどう処理しようかしら
 def apdate_url(email, url)
 	stmt = client.prepare("update notice set keyword = ? where email = ? and url = ?")
 	stmt.execute next_word, email, url
@@ -49,19 +45,18 @@ end
 
 
 def notice(url, search_word)
-	#検索ワード＆検索ページ
+	stop_url = "stop_url"
+
 	#search_word = '22話'
 	#url = "http://urasunday.com/bloodbone/index.html" 
 
-
-	#更新されていたら通知する
 	#doc = Nokogiri::HTML.parse(open(url, "r:Shift_JIS").read)
 	doc = Nokogiri::HTML(open(url))
-	doc.css('a, p').each do |node|
+	doc.css('a, p, h1, h2, h3').each do |node|
 		node.each do |f|
 			if node.text.include?(search_word) then
-				email("hyoga0216@gmail.com", "銀狼ブラッドボーンが更新されました！")
-								
+				content = search_word + " of " + url + "is up to date \n You can stop notice -> " + stop_url
+				email("hyoga0216@gmail.com", content)
 			end
 		end
 	end
