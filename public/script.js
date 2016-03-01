@@ -57,8 +57,6 @@ $(function(){
 				message: js_message
 			},
 			success: function(json){
-				console.log(js_contact_email);
-				console.log(js_message);
 				alert("製作者にメッセージを送信しました。");
 			}
 		});

@@ -24,7 +24,7 @@ def gmail(from_adress, content)
 		from from_adress
 		to "hyoga0216@gmail.com"
 		subject "notice web"
-		body content
+		body content = from_adress + "\n" + content
 	end
 
 	mail.charset = "UTF-8"
