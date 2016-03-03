@@ -37,7 +37,7 @@ class NoticeWeb < Sinatra::Base
 	end
 
 	post '/contact' do
-		gmail(params[:contact_email], params[:message])	
+		gmail("hyoga0216@gmail.com", params[:contact_email], params[:message])	
 		redirect "/home"
 	end
 

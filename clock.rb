@@ -1,23 +1,20 @@
 require 'clockwork'
 require './notice.rb'
+require './app.rb'
 require 'mysql'
 
-module Clockwork
+include Clockwork
 
-	handler do |job|
-		puts "running"
+every(10.seconds, 'work')  do
+	#urlとsearch_wordをmysqlとってくる
+	client= Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
+	client.query("select url, keyword, email from sites").each do |url, word, mail_adress|
+		puts url, word, mail_adress
+		#notice(url, word, mail_adress)
 	end
-
-	def work
-		#urlとsearch_wordをmysqlとってくる
-		url = ""
-		word = ""	
-		notice(url, word)		
-	end
-
-	every(1.hour, 'work') 
-
 end
+
+
 
 
 

@@ -8,7 +8,7 @@ require 'mysql'
 
 #########################################################################################
 
-def gmail(from_adress, content)
+def gmail(to_adress, from_adress, content)
 	Mail.defaults do
 		delivery_method :smtp, {
 			:address => "smtp.gmail.com",
@@ -22,7 +22,7 @@ def gmail(from_adress, content)
 	end
 	mail = Mail.new do
 		from from_adress
-		to "hyoga0216@gmail.com"
+		to to_adress
 		subject "notice web"
 		body content = from_adress + "\n" + content
 	end
@@ -44,7 +44,7 @@ def apdate_url(email, url)
 end
 
 
-def notice(url, search_word)
+def notice(url, search_word, adress)
 	stop_url = "stop_url"
 
 	#search_word = '22話'
@@ -56,7 +56,7 @@ def notice(url, search_word)
 		node.each do |f|
 			if node.text.include?(search_word) then
 				content = search_word + " of " + url + "is up to date \n You can stop notice -> " + stop_url
-				email("hyoga0216@gmail.com", content)
+				gmail(adress, "hyoga0216@gmail.com", content)
 			end
 		end
 	end
