@@ -16,7 +16,8 @@ class NoticeWeb < Sinatra::Base
 	stmt = client.query('create table if not exists sites (
 										keyword varchar(255),
 										url varchar(255),
-										email varchar(255)
+										email varchar(255),
+										noticed bool
 										)')
 
 #########################################################################################
@@ -30,7 +31,7 @@ class NoticeWeb < Sinatra::Base
 	end
 
 	post '/notice' do
-		stmt = client.prepare("insert into sites values(?, ?, ?)")
+		stmt = client.prepare("insert into sites values(?, ?, ?, false)")
 		stmt.execute params[:keyword], params[:url], params[:email]
 		
 		redirect "/home"	
