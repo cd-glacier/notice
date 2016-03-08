@@ -1,12 +1,12 @@
 # encoding: utf-8
 require 'clockwork'
-require './notice.rb'
-require './app.rb'
+require '/projects/notice/notice.rb'
+require '/projects/notice/app.rb'
 require 'mysql'
 
 include Clockwork
 
-every(10.seconds, 'work')  do
+every(30.minutes, 'work')  do
 	#urlとsearch_word, mail adressをmysqlからとってくる
 	client= Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
 	client.query("select noticed from sites").each do |noticed|

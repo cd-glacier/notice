@@ -1,5 +1,5 @@
 #webサイト通知サービス
-まだ動かない
+一応動いている
 
 ### 参考になったサイトたち（自分用）
 
@@ -17,3 +17,12 @@
 
  > http://www.school.ctc-g.co.jp/columns/masuidrive/masuidrive07.html
 
+### Usage
+
+```
+ clockworkd -c clock.rb start --log
+```
+
+```
+unicorn -c unicorn.rb -E development -D
+```

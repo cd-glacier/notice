@@ -1,6 +1,6 @@
 #encode utf-8
-require "./pass.rb"
-require "./notice.rb"
+require "/projects/notice/pass.rb"
+require "/projects/notice/notice.rb"
 require "rubygems"
 require "sinatra"
 require "sinatra/base"
