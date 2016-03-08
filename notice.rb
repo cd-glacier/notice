@@ -1,5 +1,5 @@
 # encoding: utf-8
-require './pass.rb'
+require '/projects/notice/pass.rb'
 require 'nokogiri'
 require 'open-uri'
 
@@ -33,15 +33,22 @@ def gmail(to_adress, from_adress, content)
 
 end
 
+=begin
 def delete_url(email, url)
 	stmt = client.prepare("delete from notice where email = ? and url = ?")
 	stmt.execute email, url
 end
 
-def apdate_url(email, url)
+def update_url(next_word, email, url)
 	stmt = client.prepare("update notice set keyword = ? where email = ? and url = ?")
 	stmt.execute next_word, email, url
 end
+
+def next_notice(next_word, email, url)
+	stmt = client.prepare("update notice set keyword = ? where email = ? and url = ?")
+	stmt.execute next_word, email, url
+end
+=end
 
 def show_charset(url)
 	html_charset = {}
