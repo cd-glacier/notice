@@ -1,5 +1,5 @@
+# encoding: utf-8
 require './pass.rb'
-
 require 'nokogiri'
 require 'open-uri'
 
@@ -24,7 +24,7 @@ def gmail(to_adress, from_adress, content)
 		from from_adress
 		to to_adress
 		subject "notice web"
-		body content = from_adress + "\n" + content
+		body content = "from:" + from_adress + "\n" + content
 	end
 
 	mail.charset = "UTF-8"
@@ -43,22 +43,34 @@ def apdate_url(email, url)
 	stmt.execute next_word, email, url
 end
 
+def show_charset(url)
+	html_charset = {}
+	html = open(url) do |f|
+		charset = f.charset
+		html_charset[:charset] = charset
+		f.read
+	end
+	html_charset[:html] = html
+	return html_charset
+end
 
 def notice(url, search_word, adress)
+	html_charset =  show_charset(url)
 	stop_url = "stop_url"
 
 	#search_word = '22話'
 	#url = "http://urasunday.com/bloodbone/index.html" 
 
 	#doc = Nokogiri::HTML.parse(open(url, "r:Shift_JIS").read)
-	doc = Nokogiri::HTML(open(url))
+	doc = Nokogiri::HTML.parse(html_charset[:html], nil, html_charset[:charset])
 	doc.css('a, p, h1, h2, h3').each do |node|
 		node.each do |f|
-			if node.text.include?(search_word) then
+			if node.text.include?(search_word.force_encoding(html_charset[:charset])) then
 				content = search_word + " of " + url + "is up to date \n You can stop notice -> " + stop_url
 				gmail(adress, "hyoga0216@gmail.com", content)
 			end
 		end
 	end
-
 end
+
+

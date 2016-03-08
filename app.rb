@@ -15,11 +15,11 @@ helpers do
 	alias_method :h, :escape_html
 end
 
-#class NoticeWeb < Sinatra::Base
+class NoticeWeb < Sinatra::Base
 
 	#mysql
-	##client= Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
-	client= Mysql.connect('localhost', 'root', nil, 'notice')
+	client= Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
+	##client= Mysql.connect('localhost', 'root', nil, 'notice')
 	stmt = client.query('create table if not exists sites (
 										keyword varchar(255),
 										url varchar(255),
@@ -53,4 +53,4 @@ end
 			
 	end
 
-#end
+end
