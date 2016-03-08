@@ -9,10 +9,17 @@ require "sinatra/reloader" if development?
 
 require 'mysql'
 
-class NoticeWeb < Sinatra::Base
+#e.g. <%= h hoge %>
+helpers do
+	include Rack::Utils
+	alias_method :h, :escape_html
+end
+
+#class NoticeWeb < Sinatra::Base
 
 	#mysql
-	client= Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
+	##client= Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
+	client= Mysql.connect('localhost', 'root', nil, 'notice')
 	stmt = client.query('create table if not exists sites (
 										keyword varchar(255),
 										url varchar(255),
@@ -34,7 +41,7 @@ class NoticeWeb < Sinatra::Base
 		stmt = client.prepare("insert into sites values(?, ?, ?, false)")
 		stmt.execute params[:keyword], params[:url], params[:email]
 		
-		redirect "/home"	
+		redirect "/home"
 	end
 
 	post '/contact' do
@@ -46,4 +53,4 @@ class NoticeWeb < Sinatra::Base
 			
 	end
 
-end
+#end
