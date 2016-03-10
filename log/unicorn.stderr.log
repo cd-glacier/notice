@@ -1,46 +1,14 @@
-2016-03-09 05:33:40 - Mysql::Error - MySQL server has gone away:
-	/projects/notice/app.rb:41:in `prepare'
-	/projects/notice/app.rb:41:in `block in <class:NoticeWeb>'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `[]'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
-	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
-	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
-	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
-	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
-	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
-	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
-	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
-	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
-	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
-	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
-	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
-	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
-	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
-	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
-	/usr/local/bin/unicorn:23:in `load'
-	/usr/local/bin/unicorn:23:in `<main>'
+I, [2016-03-10T16:38:56.290103 #29538]  INFO -- : reaped #<Process::Status: pid 29541 exit 0> worker=0
+I, [2016-03-10T16:38:56.290229 #29538]  INFO -- : reaped #<Process::Status: pid 29543 exit 0> worker=1
+I, [2016-03-10T16:38:56.290375 #29538]  INFO -- : master complete
+I, [2016-03-10T16:39:02.071035 #29762]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-10T16:39:02.071202 #29762]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-10T16:39:02.071288 #29762]  INFO -- : worker=0 spawning...
+I, [2016-03-10T16:39:02.073908 #29762]  INFO -- : worker=1 spawning...
+I, [2016-03-10T16:39:02.074360 #29762]  INFO -- : master process ready
+I, [2016-03-10T16:39:02.074909 #29765]  INFO -- : worker=0 spawned pid=29765
+I, [2016-03-10T16:39:02.075028 #29765]  INFO -- : Refreshing Gem list
+I, [2016-03-10T16:39:02.080728 #29767]  INFO -- : worker=1 spawned pid=29767
+I, [2016-03-10T16:39:02.080849 #29767]  INFO -- : Refreshing Gem list
+I, [2016-03-10T16:39:02.385593 #29767]  INFO -- : worker=1 ready
+I, [2016-03-10T16:39:02.392024 #29765]  INFO -- : worker=0 ready
