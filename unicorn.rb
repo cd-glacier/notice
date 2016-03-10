@@ -1,6 +1,7 @@
 # set path to app that will be used to configure unicorn,
 # note the trailing slash in this example
-@dir = "/projects/notice/"
+require "./adapt_ADE.rb"
+@dir = show_adapted_path()
 
 worker_processes 2
 working_directory @dir
