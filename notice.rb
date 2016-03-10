@@ -61,8 +61,15 @@ def show_charset(url)
 	return html_charset
 end
 
+def add_https(url)
+	unless url.include?("http") then
+		url = "https://" + url
+	end
+end
+
 def notice(url, search_word, adress)
 	html_charset =  show_charset(url)
+	puts html_charset[:charset]
 	stop_url = "stop_url"
 
 	#search_word = '22話'
@@ -71,11 +78,19 @@ def notice(url, search_word, adress)
 	#doc = Nokogiri::HTML.parse(open(url, "r:Shift_JIS").read)
 	doc = Nokogiri::HTML.parse(html_charset[:html], nil, html_charset[:charset])
 	doc.css('a, p, h1, h2, h3').each do |node|
-		node.each do |f|
-			if node.text.include?(search_word.force_encoding(html_charset[:charset])) then
+		#node.each do |f|
+			#if node.text.include?(search_word.force_encoding(html_charset[:charset])) then
+			if node.text.include?(search_word.force_encoding("UTF-8")) then
+				puts "keyword is discovered!"
 				content = search_word + " of " + url + "is up to date \n You can stop notice -> " + stop_url
 				gmail(adress, "hyoga0216@gmail.com", content)
-			end
+				puts "send mail to " + adress
+				#noticed をtrueにする
+				client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
+				stmt = client.prepare("update sites set noticed = 1 where url = ? && keyword = ? && email = ?")
+				stmt.execute url, search_word, adress
+				break
+			#end
 		end
 	end
 end
