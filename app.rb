@@ -34,8 +34,12 @@ class NoticeWeb < Sinatra::Base
 		"Hello My First Web App!"
 	end
 
-	get '/home' do
+	get '/notice' do
 		erb :home
+	end
+
+	get '/delete' do
+		erb :delete
 	end
 
 	post '/notice' do

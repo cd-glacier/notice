@@ -1,6 +1,10 @@
 #webサイト通知サービス
 一応動いている
 
+ > http://glacier.space/notice 
+
+domainは変える予定
+
 ### 参考になったサイトたち（自分用）
 
 #### sinatra unicorn

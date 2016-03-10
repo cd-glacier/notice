@@ -13,3 +13,155 @@ I, [2016-03-10T16:39:02.080849 #29767]  INFO -- : Refreshing Gem list
 I, [2016-03-10T16:39:02.385593 #29767]  INFO -- : worker=1 ready
 I, [2016-03-10T16:39:02.392024 #29765]  INFO -- : worker=0 ready
 220.167.100.13 - - [10/Mar/2016:16:53:12 +0900] "GET /manager/html HTTP/1.0" 404 517 0.0239
+153.159.107.207 - - [10/Mar/2016:17:31:23 +0900] "GET /home HTTP/1.0" 200 4563 0.0316
+153.159.107.207 - - [10/Mar/2016:17:31:39 +0900] "POST /notice HTTP/1.0" 302 - 0.0056
+153.159.107.207 - - [10/Mar/2016:17:31:39 +0900] "GET /home HTTP/1.0" 200 4563 0.0057
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /home HTTP/1.0" 200 4563 0.0044
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0019
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /script.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0030
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:18:05:56 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0010
+61.46.224.158, 66.102.7.190 - - [10/Mar/2016:18:08:47 +0900] "GET /home HTTP/1.0" 200 4563 0.0057
+61.46.224.158, 66.102.7.183 - - [10/Mar/2016:18:08:48 +0900] "GET /favicon.ico HTTP/1.0" 404 511 0.0031
+I, [2016-03-10T19:22:16.703526 #29762]  INFO -- : reaped #<Process::Status: pid 29765 exit 0> worker=0
+I, [2016-03-10T19:22:16.703714 #29762]  INFO -- : reaped #<Process::Status: pid 29767 exit 0> worker=1
+I, [2016-03-10T19:22:16.703996 #29762]  INFO -- : master complete
+I, [2016-03-10T19:22:57.483946 #31444]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-10T19:22:57.484143 #31444]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-10T19:22:57.484244 #31444]  INFO -- : worker=0 spawning...
+I, [2016-03-10T19:22:57.485891 #31444]  INFO -- : worker=1 spawning...
+I, [2016-03-10T19:22:57.486474 #31447]  INFO -- : worker=0 spawned pid=31447
+I, [2016-03-10T19:22:57.486595 #31447]  INFO -- : Refreshing Gem list
+I, [2016-03-10T19:22:57.488516 #31444]  INFO -- : master process ready
+I, [2016-03-10T19:22:57.493834 #31450]  INFO -- : worker=1 spawned pid=31450
+I, [2016-03-10T19:22:57.493985 #31450]  INFO -- : Refreshing Gem list
+I, [2016-03-10T19:22:57.803332 #31447]  INFO -- : worker=0 ready
+I, [2016-03-10T19:22:57.808043 #31450]  INFO -- : worker=1 ready
+61.46.224.158 - - [10/Mar/2016:19:23:08 +0900] "GET /home HTTP/1.0" 200 4563 0.0270
+I, [2016-03-10T19:25:23.370125 #31444]  INFO -- : reaped #<Process::Status: pid 31447 exit 0> worker=0
+I, [2016-03-10T19:25:23.370271 #31444]  INFO -- : reaped #<Process::Status: pid 31450 exit 0> worker=1
+I, [2016-03-10T19:25:23.370411 #31444]  INFO -- : master complete
+I, [2016-03-10T19:25:28.176277 #31549]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-10T19:25:28.176432 #31549]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-10T19:25:28.176519 #31549]  INFO -- : worker=0 spawning...
+I, [2016-03-10T19:25:28.177939 #31549]  INFO -- : worker=1 spawning...
+I, [2016-03-10T19:25:28.178321 #31549]  INFO -- : master process ready
+I, [2016-03-10T19:25:28.178796 #31552]  INFO -- : worker=0 spawned pid=31552
+I, [2016-03-10T19:25:28.178881 #31552]  INFO -- : Refreshing Gem list
+I, [2016-03-10T19:25:28.187056 #31554]  INFO -- : worker=1 spawned pid=31554
+I, [2016-03-10T19:25:28.187163 #31554]  INFO -- : Refreshing Gem list
+I, [2016-03-10T19:25:28.495741 #31552]  INFO -- : worker=0 ready
+I, [2016-03-10T19:25:28.504611 #31554]  INFO -- : worker=1 ready
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /home HTTP/1.0" 200 4563 0.0266
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /style.css HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /script.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0226
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0033
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [10/Mar/2016:19:25:32 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:19:25:33 +0900] "GET /home HTTP/1.0" 200 4563 0.0041
+61.46.224.158 - - [10/Mar/2016:19:25:34 +0900] "GET /style.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:19:25:34 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0015
+61.46.224.158 - - [10/Mar/2016:19:25:34 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:19:25:34 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:19:25:34 +0900] "GET /script.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:19:25:34 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:19:25:34 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:19:25:34 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0032
+61.46.224.158 - - [10/Mar/2016:19:25:34 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0011
+I, [2016-03-10T19:30:18.746406 #31549]  INFO -- : reaped #<Process::Status: pid 31552 exit 0> worker=0
+I, [2016-03-10T19:30:18.746531 #31549]  INFO -- : reaped #<Process::Status: pid 31554 exit 0> worker=1
+I, [2016-03-10T19:30:18.746638 #31549]  INFO -- : master complete
+I, [2016-03-10T19:30:53.911052 #31662]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-10T19:30:53.911234 #31662]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-10T19:30:53.911357 #31662]  INFO -- : worker=0 spawning...
+I, [2016-03-10T19:30:53.911750 #31662]  INFO -- : worker=1 spawning...
+I, [2016-03-10T19:30:53.912198 #31662]  INFO -- : master process ready
+I, [2016-03-10T19:30:53.917824 #31667]  INFO -- : worker=1 spawned pid=31667
+I, [2016-03-10T19:30:53.917955 #31667]  INFO -- : Refreshing Gem list
+I, [2016-03-10T19:30:53.918076 #31665]  INFO -- : worker=0 spawned pid=31665
+I, [2016-03-10T19:30:53.918271 #31665]  INFO -- : Refreshing Gem list
+I, [2016-03-10T19:30:54.234183 #31667]  INFO -- : worker=1 ready
+I, [2016-03-10T19:30:54.273079 #31665]  INFO -- : worker=0 ready
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /home HTTP/1.0" 200 4563 0.0383
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /style.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /script.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0274
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0032
+61.46.224.158 - - [10/Mar/2016:19:30:58 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0008
+54.210.64.25 - - [10/Mar/2016:19:53:44 +0900] "GET / HTTP/1.0" 200 23 0.0014
+146.185.239.100 - - [10/Mar/2016:19:57:04 +0900] "GET /?PHPSESSID=aab45f4f00143PQPJWUAYCEZJ%40%5B HTTP/1.0" 200 23 0.0031
+122.224.8.2 - - [10/Mar/2016:22:20:22 +0900] "HEAD / HTTP/1.0" 200 23 0.0017
+122.224.8.2 - - [10/Mar/2016:22:20:24 +0900] "GET / HTTP/1.0" 200 23 0.0016
+137.226.113.7 - - [10/Mar/2016:22:22:44 +0900] "GET / HTTP/1.0" 200 23 0.0017
+137.226.113.7 - - [10/Mar/2016:22:22:44 +0900] "GET / HTTP/1.0" 200 23 0.0015
+137.226.113.7 - - [10/Mar/2016:22:22:44 +0900] "GET / HTTP/1.0" 200 23 0.0015
+137.226.113.7 - - [10/Mar/2016:22:22:47 +0900] "GET /YesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScann HTTP/1.0" 404 1500 0.0018
+137.226.113.7 - - [10/Mar/2016:22:22:47 +0900] "GET /YesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScann HTTP/1.0" 404 1500 0.0017
+137.226.113.7 - - [10/Mar/2016:22:22:48 +0900] "GET /YesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScanningForResearchPurposePleaseHaveALookAtTheUserAgentTHXYesThisIsAReallyLongRequestURLbutWeAreDoingItOnPurposeWeAreScann HTTP/1.0" 404 1500 0.0016
+61.46.224.158 - - [10/Mar/2016:22:54:51 +0900] "GET / HTTP/1.0" 200 23 0.0016
+61.46.224.158 - - [10/Mar/2016:22:54:52 +0900] "GET /favicon.ico HTTP/1.0" 404 510 0.0042
+61.46.224.158 - - [10/Mar/2016:22:54:56 +0900] "GET /home HTTP/1.0" 200 4563 0.0068
+61.46.224.158 - - [10/Mar/2016:22:54:56 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 200 84345 0.0028
+61.46.224.158 - - [10/Mar/2016:22:54:56 +0900] "GET /style.css HTTP/1.0" 200 1368 0.0006
+61.46.224.158 - - [10/Mar/2016:22:54:56 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 200 130561 0.0036
+61.46.224.158 - - [10/Mar/2016:22:54:56 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 200 191870 0.0134
+61.46.224.158 - - [10/Mar/2016:22:54:56 +0900] "GET /script.js HTTP/1.0" 200 1329 0.0013
+61.46.224.158 - - [10/Mar/2016:22:54:56 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0056
+61.46.224.158 - - [10/Mar/2016:22:54:56 +0900] "GET /images/2.png HTTP/1.0" 200 11873 0.0022
+61.46.224.158 - - [10/Mar/2016:22:54:56 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 200 49236 0.0057
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /home HTTP/1.0" 200 4563 0.0164
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /script.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0032
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:22:55:00 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:22:58:17 +0900] "GET / HTTP/1.0" 200 23 0.0016
+61.46.224.158 - - [10/Mar/2016:22:58:21 +0900] "GET / HTTP/1.0" 200 23 0.0014
+61.46.224.158 - - [10/Mar/2016:22:58:34 +0900] "GET / HTTP/1.0" 200 23 0.0011
+61.46.224.158 - - [10/Mar/2016:22:58:36 +0900] "GET /home HTTP/1.0" 200 4563 0.0066
+61.46.224.158 - - [10/Mar/2016:22:58:36 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 200 191870 0.0234
+61.46.224.158 - - [10/Mar/2016:22:58:36 +0900] "GET /style.css HTTP/1.0" 200 1368 0.0013
+61.46.224.158 - - [10/Mar/2016:22:58:36 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 200 84345 0.0028
+61.46.224.158 - - [10/Mar/2016:22:58:36 +0900] "GET /images/2.png HTTP/1.0" 200 11873 0.0039
+61.46.224.158 - - [10/Mar/2016:22:58:36 +0900] "GET /script.js HTTP/1.0" 200 1329 0.0015
+61.46.224.158 - - [10/Mar/2016:22:58:36 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0031
+61.46.224.158 - - [10/Mar/2016:22:58:36 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 200 130561 0.0032
+61.46.224.158 - - [10/Mar/2016:22:58:37 +0900] "GET /materialize/font/roboto/Roboto-Thin.woff HTTP/1.0" 200 61628 0.0066
+61.46.224.158 - - [10/Mar/2016:22:58:37 +0900] "GET /materialize/font/roboto/Roboto-Light.woff HTTP/1.0" 200 62316 0.0059
+61.46.224.158 - - [10/Mar/2016:22:58:37 +0900] "GET /materialize/font/roboto/Roboto-Medium.woff HTTP/1.0" 200 62980 0.0127
+61.46.224.158 - - [10/Mar/2016:22:58:37 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff HTTP/1.0" 200 61736 0.0061
+61.46.224.158 - - [10/Mar/2016:22:58:37 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff HTTP/1.0" 200 62876 0.0095
+I, [2016-03-10T22:59:02.123241 #31662]  INFO -- : reaped #<Process::Status: pid 31665 exit 0> worker=0
+I, [2016-03-10T22:59:02.123366 #31662]  INFO -- : reaped #<Process::Status: pid 31667 exit 0> worker=1
+I, [2016-03-10T22:59:02.123479 #31662]  INFO -- : master complete
+I, [2016-03-10T22:59:32.450193 #381]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-10T22:59:32.450396 #381]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-10T22:59:32.450537 #381]  INFO -- : worker=0 spawning...
+I, [2016-03-10T22:59:32.453925 #381]  INFO -- : worker=1 spawning...
+I, [2016-03-10T22:59:32.454400 #381]  INFO -- : master process ready
+I, [2016-03-10T22:59:32.454934 #384]  INFO -- : worker=0 spawned pid=384
+I, [2016-03-10T22:59:32.455020 #384]  INFO -- : Refreshing Gem list
+I, [2016-03-10T22:59:32.461362 #386]  INFO -- : worker=1 spawned pid=386
+I, [2016-03-10T22:59:32.461499 #386]  INFO -- : Refreshing Gem list
+I, [2016-03-10T22:59:32.785164 #386]  INFO -- : worker=1 ready
+I, [2016-03-10T22:59:32.788281 #384]  INFO -- : worker=0 ready
+61.46.224.158 - - [10/Mar/2016:22:59:44 +0900] "GET /home HTTP/1.0" 404 503 0.0310
+61.46.224.158 - - [10/Mar/2016:22:59:44 +0900] "GET /__sinatra__/404.png HTTP/1.0" 200 18893 0.0361
+61.46.224.158 - - [10/Mar/2016:22:59:55 +0900] "GET /notice HTTP/1.0" 200 4563 0.0059
