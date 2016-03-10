@@ -165,3 +165,227 @@ I, [2016-03-10T22:59:32.788281 #384]  INFO -- : worker=0 ready
 61.46.224.158 - - [10/Mar/2016:22:59:44 +0900] "GET /home HTTP/1.0" 404 503 0.0310
 61.46.224.158 - - [10/Mar/2016:22:59:44 +0900] "GET /__sinatra__/404.png HTTP/1.0" 200 18893 0.0361
 61.46.224.158 - - [10/Mar/2016:22:59:55 +0900] "GET /notice HTTP/1.0" 200 4563 0.0059
+61.46.224.158 - - [10/Mar/2016:23:03:25 +0900] "GET /notice HTTP/1.0" 200 4563 0.0077
+61.46.224.158 - - [10/Mar/2016:23:03:25 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0019
+61.46.224.158 - - [10/Mar/2016:23:03:25 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [10/Mar/2016:23:03:25 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:23:03:25 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [10/Mar/2016:23:03:25 +0900] "GET /script.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:23:03:25 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:03:25 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0042
+61.46.224.158 - - [10/Mar/2016:23:03:25 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:23:04:57 +0900] "GET /notice HTTP/1.0" 200 4563 0.0040
+191.236.119.223 - - [10/Mar/2016:23:15:05 +0900] "GET /cgi-bin/test-cgi HTTP/1.0" 404 521 0.0013
+89.248.160.132 - - [10/Mar/2016:23:37:53 +0900] "GET /Forums/forum.php HTTP/1.0" 404 527 0.0014
+61.46.224.158 - - [10/Mar/2016:23:51:42 +0900] "GET /notice HTTP/1.0" 200 4563 0.0040
+61.46.224.158 - - [10/Mar/2016:23:51:43 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [10/Mar/2016:23:51:43 +0900] "GET /style.css HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:51:43 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:23:51:43 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:23:51:43 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [10/Mar/2016:23:51:43 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:23:51:43 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0033
+61.46.224.158 - - [10/Mar/2016:23:51:43 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:23:51:43 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:52:04 +0900] "POST /notice HTTP/1.0" 302 - 0.0052
+61.46.224.158 - - [10/Mar/2016:23:52:04 +0900] "GET /home HTTP/1.0" 404 503 0.0014
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /notice HTTP/1.0" 200 4563 0.0051
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /script.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0032
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:23:52:29 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:23:52:42 +0900] "POST /notice HTTP/1.0" 302 - 0.0032
+61.46.224.158 - - [10/Mar/2016:23:52:42 +0900] "GET /home HTTP/1.0" 404 503 0.0019
+61.46.224.158 - - [10/Mar/2016:23:53:21 +0900] "POST /notice HTTP/1.0" 302 - 0.0035
+61.46.224.158 - - [10/Mar/2016:23:53:21 +0900] "GET /home HTTP/1.0" 404 503 0.0019
+61.46.224.158 - - [10/Mar/2016:23:53:43 +0900] "GET /notice HTTP/1.0" 200 4563 0.0072
+61.46.224.158 - - [10/Mar/2016:23:53:43 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0136
+61.46.224.158 - - [10/Mar/2016:23:53:43 +0900] "GET /style.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:23:53:43 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [10/Mar/2016:23:53:43 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:23:53:43 +0900] "GET /script.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:53:43 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0030
+61.46.224.158 - - [10/Mar/2016:23:53:43 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:53:43 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:23:53:53 +0900] "GET /notice HTTP/1.0" 200 4563 0.0040
+61.46.224.158 - - [10/Mar/2016:23:54:11 +0900] "POST /notice HTTP/1.0" 302 - 0.0046
+61.46.224.158 - - [10/Mar/2016:23:54:11 +0900] "GET /home HTTP/1.0" 404 503 0.0018
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /notice HTTP/1.0" 200 4563 0.0060
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0016
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /style.css HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /script.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0191
+61.46.224.158 - - [10/Mar/2016:23:56:18 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0011
+I, [2016-03-10T23:56:36.601679 #381]  INFO -- : reaped #<Process::Status: pid 384 exit 0> worker=0
+I, [2016-03-10T23:56:36.601808 #381]  INFO -- : reaped #<Process::Status: pid 386 exit 0> worker=1
+I, [2016-03-10T23:56:36.601910 #381]  INFO -- : master complete
+I, [2016-03-10T23:56:58.320013 #923]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-10T23:56:58.320239 #923]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-10T23:56:58.320335 #923]  INFO -- : worker=0 spawning...
+I, [2016-03-10T23:56:58.322018 #923]  INFO -- : worker=1 spawning...
+I, [2016-03-10T23:56:58.322553 #926]  INFO -- : worker=0 spawned pid=926
+I, [2016-03-10T23:56:58.322639 #926]  INFO -- : Refreshing Gem list
+I, [2016-03-10T23:56:58.325230 #923]  INFO -- : master process ready
+I, [2016-03-10T23:56:58.330854 #929]  INFO -- : worker=1 spawned pid=929
+I, [2016-03-10T23:56:58.330982 #929]  INFO -- : Refreshing Gem list
+/projects/notice/adapt_ADE.rb:4: Use RbConfig instead of obsolete and deprecated Config.
+/projects/notice/adapt_ADE.rb:4: Use RbConfig instead of obsolete and deprecated Config.
+I, [2016-03-10T23:56:58.651267 #929]  INFO -- : worker=1 ready
+I, [2016-03-10T23:56:58.655284 #926]  INFO -- : worker=0 ready
+61.46.224.158 - - [10/Mar/2016:23:57:00 +0900] "GET /notice HTTP/1.0" 200 4563 0.0261
+61.46.224.158 - - [10/Mar/2016:23:57:01 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0201
+61.46.224.158 - - [10/Mar/2016:23:57:01 +0900] "GET /style.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:23:57:01 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [10/Mar/2016:23:57:01 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0015
+61.46.224.158 - - [10/Mar/2016:23:57:01 +0900] "GET /script.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:57:01 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:23:57:01 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0045
+61.46.224.158 - - [10/Mar/2016:23:57:01 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:23:57:09 +0900] "POST /notice HTTP/1.0" 302 - 0.0081
+61.46.224.158 - - [10/Mar/2016:23:57:09 +0900] "GET /home HTTP/1.0" 404 503 0.0016
+61.46.224.158 - - [10/Mar/2016:23:57:37 +0900] "GET /notice HTTP/1.0" 200 4563 0.0038
+61.46.224.158 - - [10/Mar/2016:23:57:37 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [10/Mar/2016:23:57:37 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [10/Mar/2016:23:57:37 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [10/Mar/2016:23:57:37 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:57:37 +0900] "GET /script.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [10/Mar/2016:23:57:37 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0035
+61.46.224.158 - - [10/Mar/2016:23:57:37 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [10/Mar/2016:23:57:37 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [10/Mar/2016:23:57:47 +0900] "POST /notice HTTP/1.0" 302 - 0.0060
+61.46.224.158 - - [10/Mar/2016:23:57:47 +0900] "GET /home HTTP/1.0" 404 503 0.0018
+I, [2016-03-10T23:58:22.339452 #923]  INFO -- : reaped #<Process::Status: pid 926 exit 0> worker=0
+I, [2016-03-10T23:58:22.339606 #923]  INFO -- : reaped #<Process::Status: pid 929 exit 0> worker=1
+I, [2016-03-10T23:58:22.339757 #923]  INFO -- : master complete
+I, [2016-03-10T23:58:25.393023 #972]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-10T23:58:25.393216 #972]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-10T23:58:25.393332 #972]  INFO -- : worker=0 spawning...
+I, [2016-03-10T23:58:25.393809 #972]  INFO -- : worker=1 spawning...
+I, [2016-03-10T23:58:25.394268 #975]  INFO -- : worker=0 spawned pid=975
+I, [2016-03-10T23:58:25.394397 #975]  INFO -- : Refreshing Gem list
+I, [2016-03-10T23:58:25.397885 #972]  INFO -- : master process ready
+I, [2016-03-10T23:58:25.406039 #978]  INFO -- : worker=1 spawned pid=978
+I, [2016-03-10T23:58:25.406182 #978]  INFO -- : Refreshing Gem list
+/projects/notice/adapt_ADE.rb:4: Use RbConfig instead of obsolete and deprecated Config.
+/projects/notice/adapt_ADE.rb:4: Use RbConfig instead of obsolete and deprecated Config.
+I, [2016-03-10T23:58:25.719080 #975]  INFO -- : worker=0 ready
+I, [2016-03-10T23:58:25.732928 #978]  INFO -- : worker=1 ready
+61.46.224.158 - - [10/Mar/2016:23:58:27 +0900] "GET /notice HTTP/1.0" 200 4563 0.0326
+61.46.224.158 - - [10/Mar/2016:23:58:27 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0264
+61.46.224.158 - - [10/Mar/2016:23:58:27 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [10/Mar/2016:23:58:27 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0021
+61.46.224.158 - - [10/Mar/2016:23:58:27 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [10/Mar/2016:23:58:27 +0900] "GET /script.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [10/Mar/2016:23:58:27 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0018
+61.46.224.158 - - [10/Mar/2016:23:58:27 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0031
+61.46.224.158 - - [10/Mar/2016:23:58:27 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [10/Mar/2016:23:58:38 +0900] "POST /notice HTTP/1.0" 302 - 0.0055
+61.46.224.158 - - [10/Mar/2016:23:58:38 +0900] "GET /home HTTP/1.0" 404 503 0.0033
+61.46.224.158 - - [11/Mar/2016:00:04:42 +0900] "GET /notice HTTP/1.0" 200 4563 0.0068
+61.46.224.158 - - [11/Mar/2016:00:04:42 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [11/Mar/2016:00:04:42 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [11/Mar/2016:00:04:42 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [11/Mar/2016:00:04:42 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [11/Mar/2016:00:04:42 +0900] "GET /script.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [11/Mar/2016:00:04:42 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0034
+61.46.224.158 - - [11/Mar/2016:00:04:42 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [11/Mar/2016:00:04:42 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [11/Mar/2016:00:04:45 +0900] "GET /notice HTTP/1.0" 200 4563 0.0041
+61.46.224.158 - - [11/Mar/2016:00:04:45 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [11/Mar/2016:00:04:45 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [11/Mar/2016:00:04:45 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [11/Mar/2016:00:04:45 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [11/Mar/2016:00:04:45 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [11/Mar/2016:00:04:45 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [11/Mar/2016:00:04:45 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [11/Mar/2016:00:04:45 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [11/Mar/2016:00:06:55 +0900] "POST /notice HTTP/1.0" 302 - 0.0042
+61.46.224.158 - - [11/Mar/2016:00:06:55 +0900] "GET /home HTTP/1.0" 404 503 0.0013
+61.46.224.158 - - [11/Mar/2016:00:06:58 +0900] "GET /notice HTTP/1.0" 200 4563 0.0038
+61.46.224.158 - - [11/Mar/2016:00:06:58 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [11/Mar/2016:00:06:58 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [11/Mar/2016:00:06:58 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [11/Mar/2016:00:06:58 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [11/Mar/2016:00:06:58 +0900] "GET /script.js HTTP/1.0" 200 1329 0.0007
+61.46.224.158 - - [11/Mar/2016:00:06:58 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [11/Mar/2016:00:06:58 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [11/Mar/2016:00:06:58 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [11/Mar/2016:00:07:09 +0900] "POST /notice HTTP/1.0" 302 - 0.0029
+61.46.224.158 - - [11/Mar/2016:00:07:09 +0900] "GET /home HTTP/1.0" 404 503 0.0013
+I, [2016-03-11T00:07:32.530654 #972]  INFO -- : reaped #<Process::Status: pid 975 exit 0> worker=0
+I, [2016-03-11T00:07:32.530759 #972]  INFO -- : reaped #<Process::Status: pid 978 exit 0> worker=1
+I, [2016-03-11T00:07:32.530852 #972]  INFO -- : master complete
+I, [2016-03-11T00:07:37.154609 #1127]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-11T00:07:37.154810 #1127]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-11T00:07:37.154915 #1127]  INFO -- : worker=0 spawning...
+I, [2016-03-11T00:07:37.157804 #1127]  INFO -- : worker=1 spawning...
+I, [2016-03-11T00:07:37.158201 #1127]  INFO -- : master process ready
+I, [2016-03-11T00:07:37.158726 #1130]  INFO -- : worker=0 spawned pid=1130
+I, [2016-03-11T00:07:37.158901 #1130]  INFO -- : Refreshing Gem list
+I, [2016-03-11T00:07:37.167745 #1132]  INFO -- : worker=1 spawned pid=1132
+I, [2016-03-11T00:07:37.167863 #1132]  INFO -- : Refreshing Gem list
+/projects/notice/adapt_ADE.rb:4: Use RbConfig instead of obsolete and deprecated Config.
+/projects/notice/adapt_ADE.rb:4: Use RbConfig instead of obsolete and deprecated Config.
+I, [2016-03-11T00:07:37.478471 #1132]  INFO -- : worker=1 ready
+I, [2016-03-11T00:07:37.479101 #1130]  INFO -- : worker=0 ready
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /notice HTTP/1.0" 200 4563 0.0322
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0213
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /style.css HTTP/1.0" 304 - 0.0020
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /script.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0032
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [11/Mar/2016:00:07:39 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [11/Mar/2016:00:07:54 +0900] "POST /notice HTTP/1.0" 302 - 0.0052
+61.46.224.158 - - [11/Mar/2016:00:07:54 +0900] "GET /notice HTTP/1.0" 200 4563 0.0075
+I, [2016-03-11T00:10:46.021485 #1127]  INFO -- : reaped #<Process::Status: pid 1130 exit 0> worker=0
+I, [2016-03-11T00:10:46.021580 #1127]  INFO -- : reaped #<Process::Status: pid 1132 exit 0> worker=1
+I, [2016-03-11T00:10:46.021721 #1127]  INFO -- : master complete
+I, [2016-03-11T00:10:52.196481 #1224]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-11T00:10:52.196676 #1224]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-11T00:10:52.196802 #1224]  INFO -- : worker=0 spawning...
+I, [2016-03-11T00:10:52.197818 #1224]  INFO -- : worker=1 spawning...
+I, [2016-03-11T00:10:52.198316 #1224]  INFO -- : master process ready
+I, [2016-03-11T00:10:52.198820 #1227]  INFO -- : worker=0 spawned pid=1227
+I, [2016-03-11T00:10:52.198918 #1227]  INFO -- : Refreshing Gem list
+I, [2016-03-11T00:10:52.200948 #1229]  INFO -- : worker=1 spawned pid=1229
+I, [2016-03-11T00:10:52.201100 #1229]  INFO -- : Refreshing Gem list
+/projects/notice/adapt_ADE.rb:4: Use RbConfig instead of obsolete and deprecated Config.
+/projects/notice/adapt_ADE.rb:4: Use RbConfig instead of obsolete and deprecated Config.
+I, [2016-03-11T00:10:52.509371 #1229]  INFO -- : worker=1 ready
+I, [2016-03-11T00:10:52.510078 #1227]  INFO -- : worker=0 ready
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /notice HTTP/1.0" 200 4563 0.0313
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0227
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /style.css HTTP/1.0" 304 - 0.0024
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0030
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0015
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /script.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0039
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [11/Mar/2016:00:10:54 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [11/Mar/2016:00:11:05 +0900] "POST /notice HTTP/1.0" 302 - 0.0064
+61.46.224.158 - - [11/Mar/2016:00:11:05 +0900] "GET /notice HTTP/1.0" 200 4563 0.0044
+61.46.224.158 - - [11/Mar/2016:00:12:11 +0900] "POST /notice HTTP/1.0" 302 - 0.0062
+61.46.224.158 - - [11/Mar/2016:00:12:11 +0900] "GET /notice HTTP/1.0" 200 4563 0.0101
+61.46.224.158 - - [11/Mar/2016:00:12:47 +0900] "GET /notice HTTP/1.0" 200 4563 0.0046
+61.46.224.158 - - [11/Mar/2016:00:12:48 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [11/Mar/2016:00:12:48 +0900] "GET /style.css HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [11/Mar/2016:00:12:48 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [11/Mar/2016:00:12:48 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [11/Mar/2016:00:12:48 +0900] "GET /materialize/js/materialize.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [11/Mar/2016:00:12:48 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0004
+61.46.224.158 - - [11/Mar/2016:00:12:48 +0900] "GET /images/1.png HTTP/1.0" 200 24110 0.0030
+61.46.224.158 - - [11/Mar/2016:00:12:48 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [11/Mar/2016:00:12:48 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0008

@@ -1,5 +1,7 @@
 # encoding: utf-8
-require '/projects/notice/pass.rb'
+require './adapt_ADE.rb'
+path = show_adapted_path()
+require path + 'pass.rb'
 require 'nokogiri'
 require 'open-uri'
 
@@ -65,6 +67,7 @@ def add_https(url)
 	unless url.include?("http") then
 		url = "https://" + url
 	end
+	return url
 end
 
 def notice(url, search_word, adress)

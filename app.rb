@@ -1,6 +1,8 @@
 #encode utf-8
-require "/projects/notice/pass.rb"
-require "/projects/notice/notice.rb"
+require './adapt_ADE.rb'
+path = show_adapted_path()
+require path + "pass.rb"
+require path + "notice.rb"
 require "rubygems"
 require "sinatra"
 require "sinatra/base"
@@ -15,11 +17,11 @@ class NoticeWeb < Sinatra::Base
 		alias_method :h, :escape_html
 	end
 
-
 	before do
 		#mysql
-		@client= Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
-		##client= Mysql.connect('localhost', 'root', nil, 'notice')
+		@client = connect_adapted_mysql()
+		#@client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
+		#@client = Mysql.connect('localhost', 'root', nil, 'notice')
 		stmt = @client.query('create table if not exists sites (
 										keyword varchar(255),
 										url varchar(255),
@@ -28,10 +30,10 @@ class NoticeWeb < Sinatra::Base
 										)')
 	end
 
-	#########################################################################################
+#########################################################################################
 
-	get '/' do
-		"Hello My First Web App!"
+	get "/" do
+		erb :home
 	end
 
 	get '/notice' do
@@ -43,12 +45,12 @@ class NoticeWeb < Sinatra::Base
 	end
 
 	post '/notice' do
-		add_https(params[:url])
+		url = add_https(params[:url])
 
 		stmt = @client.prepare("insert into sites values(?, ?, ?, false)")
-		stmt.execute params[:keyword], params[:url], params[:email]
+		stmt.execute params[:keyword], url, params[:email]
 
-		redirect "/home"
+		redirect "/notice"
 	end
 
 	post '/contact' do
@@ -56,7 +58,7 @@ class NoticeWeb < Sinatra::Base
 		redirect "/home"
 	end
 
-	get "delete/:email/:url" do
+	get "delete/email/url/keyword" do
 
 	end
 

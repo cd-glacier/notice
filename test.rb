@@ -1,7 +1,6 @@
 require "./notice.rb"
 
-puts add_https("hoge.com")
-
+puts Config::CONFIG['host_os']
 
 
 
