@@ -1,5 +1,5 @@
-I, [2016-03-10T17:23:08.989233 #30566]  INFO -- : Starting clock for 1 events: [ work ]
-I, [2016-03-10T17:23:08.989349 #30566]  INFO -- : Triggering 'work'
+I, [2016-03-12T18:47:20.246880 #18922]  INFO -- : Starting clock for 1 events: [ work ]
+I, [2016-03-12T18:47:20.246991 #18922]  INFO -- : Triggering 'work'
 seeking in https://github.com/g-hyoga
 hoge
 hyoga0216@gmail.com
@@ -19,4 +19,14 @@ seeking in http://galaxyheavyblow.web.fc2.com/
 107
 hyoga0216@gmail.com
 iso-8859-1
+ 
+seeking in https://github.com/g-hyoga/notice/issues
+open
+hyoga0216@gmail.com
+utf-8
+ 
+seeking in https://test.com
+test
+hyoga0216@gmail.com
+
  

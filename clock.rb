@@ -1,5 +1,6 @@
 # encoding: utf-8
-require "./adapt_ADE.rb"
+#require "./adapt_ADE.rb"
+require "/projects/notice/adapt_ADE.rb"
 path = show_adapted_path()
 require 'clockwork'
 require path + 'notice.rb'

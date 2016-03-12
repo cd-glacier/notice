@@ -1,4 +1,5 @@
-require "./pass.rb"
+#require "./pass.rb"
+require "/projects/notice/pass.rb"
 
 def show_os()
 	return RbConfig::CONFIG['host_os']

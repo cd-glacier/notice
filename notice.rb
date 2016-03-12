@@ -1,5 +1,5 @@
 # encoding: utf-8
-require './adapt_ADE.rb'
+require '/projects/notice/adapt_ADE.rb'
 path = show_adapted_path()
 require path + 'pass.rb'
 require 'nokogiri'
@@ -35,22 +35,20 @@ def gmail(to_adress, from_adress, content)
 
 end
 
-=begin
-def delete_url(email, url)
-	stmt = client.prepare("delete from notice where email = ? and url = ?")
-	stmt.execute email, url
+def insert_url(url, word, aderss)
+	stmt = @client.prepare("insert into sites values(?, ?, ?, false)")
+	stmt.execute word, url, adress
 end
 
-def update_url(next_word, email, url)
-	stmt = client.prepare("update notice set keyword = ? where email = ? and url = ?")
-	stmt.execute next_word, email, url
+def delete_url(url, word, adress)
+	stmt = client.prepare("delete from sites where and url = ? word = ? adress = ?")
+	stmt.execute url, word, adress
 end
 
-def next_notice(next_word, email, url)
+def update_word(url, next_word, adress)
 	stmt = client.prepare("update notice set keyword = ? where email = ? and url = ?")
-	stmt.execute next_word, email, url
+	stmt.execute next_word, adress, url
 end
-=end
 
 def show_charset(url)
 	html_charset = {}
@@ -80,20 +78,18 @@ def notice(url, search_word, adress)
 
 	#doc = Nokogiri::HTML.parse(open(url, "r:Shift_JIS").read)
 	doc = Nokogiri::HTML.parse(html_charset[:html], nil, html_charset[:charset])
-	doc.css('a, p, h1, h2, h3').each do |node|
-		#node.each do |f|
-			#if node.text.include?(search_word.force_encoding(html_charset[:charset])) then
-			if node.text.include?(search_word.force_encoding("UTF-8")) then
-				puts "keyword is discovered!"
-				content = search_word + " of " + url + "is up to date \n You can stop notice -> " + stop_url
-				gmail(adress, "hyoga0216@gmail.com", content)
-				puts "send mail to " + adress
-				#noticed をtrueにする
-				client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
-				stmt = client.prepare("update sites set noticed = 1 where url = ? && keyword = ? && email = ?")
-				stmt.execute url, search_word, adress
-				break
-			#end
+	doc.css('a, p, h1, h2, h3, span, svg, div').each do |node|
+		#if node.text.include?(search_word.force_encoding(html_charset[:charset])) then
+		if node.text.include?(search_word.force_encoding("UTF-8")) then
+			puts "keyword is discovered!"
+			content = search_word + " of " + url + "is up to date \n You can stop notice -> " + stop_url
+			gmail(adress, "hyoga0216@gmail.com", content)
+			puts "send mail to " + adress
+			#noticed をtrueにする
+			client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
+			stmt = client.prepare("update sites set noticed = 1 where url = ? && keyword = ? && email = ?")
+			stmt.execute url, search_word, adress
+			break
 		end
 	end
 end

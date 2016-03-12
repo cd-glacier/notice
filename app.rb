@@ -1,5 +1,5 @@
 #encode utf-8
-require './adapt_ADE.rb'
+require '/projects/notice/adapt_ADE.rb'
 path = show_adapted_path()
 require path + "pass.rb"
 require path + "notice.rb"
@@ -9,7 +9,7 @@ require "sinatra/base"
 require "sinatra/reloader" if development?
 require 'mysql'
 
-#class NoticeWeb < Sinatra::Base
+class NoticeWeb < Sinatra::Base
 
 	#e.g. <%= h hoge %>
 	helpers do
@@ -40,26 +40,27 @@ require 'mysql'
 		erb :home
 	end
 
-	get '/delete' do
-		erb :delete
+	get '/edit' do
+		erb :edit
 	end
 
 	post '/notice' do
 		url = add_https(params[:url])
 
-		stmt = @client.prepare("insert into sites values(?, ?, ?, false)")
-		stmt.execute params[:keyword], url, params[:email]
+		insert_url(params[:keyword], url, params[:email])
 
 		redirect "/notice"
 	end
 
 	post '/contact' do
 		gmail("hyoga0216@gmail.com", params[:contact_email], params[:message])	
-		redirect "/home"
+		redirect "/notice"
 	end
 
-	get "delete/email/url/keyword" do
+	delete  "/edit/email/url/keyword" do
+		delete_url(params[:url], params[:keyword], params[:email])	
 
+		redirect "/notice"
 	end
 
-#end
+end
