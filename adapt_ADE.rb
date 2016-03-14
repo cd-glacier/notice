@@ -1,5 +1,5 @@
-#require "./pass.rb"
-require "/projects/notice/pass.rb"
+require "./pass.rb"
+#require "/projects/notice/pass.rb"
 
 def show_os()
 	return RbConfig::CONFIG['host_os']
@@ -21,7 +21,7 @@ def connect_adapted_mysql()
 		#linux
 		client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
 	elsif show_os().include?('darwin') then
-		#iOS
+		#OSX
 		client = Mysql.connect('localhost', 'root', nil, 'notice')
 	end
 	return client

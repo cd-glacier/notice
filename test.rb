@@ -1,7 +1,7 @@
 require "./adapt_ADE.rb"
+require "./notice.rb"
 
-puts Config::CONFIG['host_os']
-puts show_adapted_path()
+s = "https://hoge.com"
+p = "http://hogehogehogehogehogeho.com"
 
-
-
+puts shorten_string(p)

@@ -1,5 +1,6 @@
 # encoding: utf-8
-require '/projects/notice/adapt_ADE.rb'
+#require '/projects/notice/adapt_ADE.rb'
+require './adapt_ADE.rb'
 path = show_adapted_path()
 require path + 'pass.rb'
 require 'nokogiri'
@@ -68,13 +69,20 @@ def add_https(url)
 	return url
 end
 
+def remove_https(url)
+	if url.include?("http")	&& url.include?("https") then
+		#https://
+		url = url[8, url.length]
+	elsif url.include?("http") then
+		url = url[7, url.length]
+	end
+	return url
+end
+
 def notice(url, search_word, adress)
 	html_charset =  show_charset(url)
 	puts html_charset[:charset]
-	stop_url = "stop_url"
-
-	#search_word = '22話'
-	#url = "http://urasunday.com/bloodbone/index.html" 
+	stop_url = "http://glacier.space/config/" + adress
 
 	#doc = Nokogiri::HTML.parse(open(url, "r:Shift_JIS").read)
 	doc = Nokogiri::HTML.parse(html_charset[:html], nil, html_charset[:charset])
@@ -92,6 +100,16 @@ def notice(url, search_word, adress)
 			break
 		end
 	end
+end
+
+def shorten_string(arg)
+	if arg.include?("http") && arg.length >= 15 then
+		arg = remove_https(arg)
+		arg = arg[0, 14] + "..." 
+	elsif arg.length >= 15 then
+		arg = arg[0, 14]  + "..."
+	end
+	return arg
 end
 
 

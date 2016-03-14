@@ -1,0 +1,30 @@
+<div class="main">
+	<div id="notice">
+		<div class="contents">
+			<h2 class="subtitle">config</h2>
+			<div class="hogehoge">
+				<p><%= h @adress %> 宛の通知一覧</p>
+			</div>
+			<div id="config_wrapper">
+				<ul>
+					<li class="config_contents">keyword</li>
+					<li class="config_contents">URL</li>
+					<li class="config_contents">通知</li>
+				</ul>
+
+				<% @word.length.times do |i|%>
+				<ul>
+					<li class="config_data"><%= h @word[i] %></li>
+					<li class="config_data"><%= h @url[i] %></li>
+					<li class="config_data"><%= h @noticed[i] %></li>
+				</ul>
+				<% end %>
+			</div>
+
+
+
+
+		</div>
+	</div>
+</div>
+

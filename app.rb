@@ -1,5 +1,6 @@
 #encode utf-8
-require '/projects/notice/adapt_ADE.rb'
+#require '/projects/notice/adapt_ADE.rb'
+require './adapt_ADE.rb'
 path = show_adapted_path()
 require path + "pass.rb"
 require path + "notice.rb"
@@ -9,7 +10,7 @@ require "sinatra/base"
 require "sinatra/reloader" if development?
 require 'mysql'
 
-class NoticeWeb < Sinatra::Base
+#class NoticeWeb < Sinatra::Base
 
 	#e.g. <%= h hoge %>
 	helpers do
@@ -40,8 +41,20 @@ class NoticeWeb < Sinatra::Base
 		erb :home
 	end
 
-	get '/edit' do
-		erb :edit
+	get '/config/:email' do
+		client = connect_adapted_mysql()
+
+		@adress = params[:email]
+		@url = []
+		@noticed = []
+		@word = []
+		client.query("select noticed, url, keyword from sites where email = '" + params[:email] + "\'").each do |noticed, url, word|
+			@noticed << shorten_string(noticed)
+			@url << shorten_string(url)
+			@word <<  shorten_string(word)
+		end
+
+		erb :config
 	end
 
 	post '/notice' do
@@ -57,10 +70,10 @@ class NoticeWeb < Sinatra::Base
 		redirect "/notice"
 	end
 
-	delete  "/edit/email/url/keyword" do
+	delete  "/config/:email/:url/:keyword" do
 		delete_url(params[:url], params[:keyword], params[:email])	
 
 		redirect "/notice"
 	end
 
-end
+#end

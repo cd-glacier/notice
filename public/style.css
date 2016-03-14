@@ -39,6 +39,7 @@ body {
 }
 
 .link_div {
+	width: 25%;
 	float: left;
 	font-size: 25px;
 }
@@ -48,6 +49,8 @@ body {
 	text-decoration: none;
 }
 
+
+
 ul {
 	padding: 0;
 	margin: 0 auto;
@@ -55,7 +58,6 @@ ul {
 
 li {
 	display:inline-block;
-	width: 25%;
 	text-align: center;
 }
 
@@ -63,7 +65,6 @@ li {
 	background-color: #E08170;
 	height: 25;
 	width: 100%;
-	bottom: 0;
 }
 
 
@@ -124,4 +125,21 @@ p {
 .btn-large:hover {
 	background-color:  #E08170;
 }
+
+/*config.erb*/
+
+.config_contents {
+	color: #E08170;
+	font-size: 25px;
+	width: 33.3%;	
+	float: left;
+}
+
+.config_data {
+	color: #5E5D5D;
+	font-size: 20px;
+	width: 33.3%;	
+	float: left;
+}
+
 
