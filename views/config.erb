@@ -5,25 +5,45 @@
 			<div class="hogehoge">
 				<p><%= h @adress %> 宛の通知一覧</p>
 			</div>
-			<div id="config_wrapper">
-				<ul>
-					<li class="config_contents">keyword</li>
-					<li class="config_contents">URL</li>
-					<li class="config_contents">通知</li>
-				</ul>
 
-				<% @word.length.times do |i|%>
-				<ul>
-					<li class="config_data"><%= h @word[i] %></li>
-					<li class="config_data"><%= h @url[i] %></li>
-					<li class="config_data"><%= h @noticed[i] %></li>
-				</ul>
-				<% end %>
+			<br>
+
+			<div id="config-wrapper">
+				<form action="POST">
+					<table>
+						<thead>
+							<tr>
+								<th>keyword</th>
+								<th>URL</th>
+								<th>通知</th>
+								<th>削除</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% @word.length.times do |i|%>
+								<tr>
+									<td><%= h @word[i] %></td>
+									<td><%= h @url[i] %></td>
+									<td>
+
+										<div class="switch">
+											<label>
+												Off
+												<input type="checkbox" <%= @checkbox[i] %>>
+												<span class="lever"></span>
+												On
+											</label>
+										</div>
+									</td>
+									<td><input type="checkbox" id="box<%= i %>"><label for="box<%= i %>"></label></td>
+								</tr>
+							<% end %>
+
+						</tbody>
+					</table>
+					<a class="waves-effect waves-light btn">update</a>
+				</form>
 			</div>
-
-
-
-
 		</div>
 	</div>
 </div>

@@ -128,18 +128,7 @@ p {
 
 /*config.erb*/
 
-.config_contents {
-	color: #E08170;
-	font-size: 25px;
-	width: 33.3%;	
-	float: left;
+#config-wrapper {
+	margin: 10 auto;
 }
-
-.config_data {
-	color: #5E5D5D;
-	font-size: 20px;
-	width: 33.3%;	
-	float: left;
-}
-
 

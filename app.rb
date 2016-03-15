@@ -48,10 +48,17 @@ require 'mysql'
 		@url = []
 		@noticed = []
 		@word = []
+		@checkbox = []
 		client.query("select noticed, url, keyword from sites where email = '" + params[:email] + "\'").each do |noticed, url, word|
-			@noticed << shorten_string(noticed)
-			@url << shorten_string(url)
-			@word <<  shorten_string(word)
+			@noticed << noticed
+			@url << url
+			@word <<  word
+			if noticed.to_i == 1 then 
+				@checkbox << "checked = 'checked'"
+			else 
+				@checkbox	<< nil
+			end
+
 		end
 
 		erb :config
