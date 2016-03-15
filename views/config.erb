@@ -22,8 +22,8 @@
 						<tbody>
 							<% @word.length.times do |i|%>
 								<tr>
-									<td><%= h @word[i] %></td>
-									<td><%= h @url[i] %></td>
+									<td><%= h @word[i].force_encoding("UTF-8") %></td>
+									<td><%= h @url[i].force_encoding("UTF-8") %></td>
 									<td>
 
 										<div class="switch">

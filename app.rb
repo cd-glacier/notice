@@ -10,7 +10,7 @@ require "sinatra/base"
 require "sinatra/reloader" if development?
 require 'mysql'
 
-#class NoticeWeb < Sinatra::Base
+class NoticeWeb < Sinatra::Base
 
 	#e.g. <%= h hoge %>
 	helpers do
@@ -83,4 +83,4 @@ require 'mysql'
 		redirect "/notice"
 	end
 
-#end
+end
