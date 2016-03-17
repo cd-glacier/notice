@@ -1,6 +1,6 @@
 # encoding: utf-8
-#require '/projects/notice/adapt_ADE.rb'
-require './adapt_ADE.rb'
+require '/projects/notice/adapt_ADE.rb'
+#require './adapt_ADE.rb'
 path = show_adapted_path()
 require path + 'pass.rb'
 require 'nokogiri'
@@ -36,19 +36,29 @@ def gmail(to_adress, from_adress, content)
 
 end
 
-def insert_url(url, word, aderss)
-	stmt = @client.prepare("insert into sites values(?, ?, ?, false)")
+def insert_url(url, word, adress)
+	stmt = @client.prepare("insert into sites(keyword, url, email, noticed) values(?, ?, ?, false)")
 	stmt.execute word, url, adress
 end
 
 def delete_url(url, word, adress)
-	stmt = client.prepare("delete from sites where and url = ? word = ? adress = ?")
+	stmt = client.prepare("delete from sites where and url = ? word = ? email = ?")
 	stmt.execute url, word, adress
 end
 
 def update_word(url, next_word, adress)
 	stmt = client.prepare("update notice set keyword = ? where email = ? and url = ?")
 	stmt.execute next_word, adress, url
+end
+
+def set_noticed_1(url, word, adress)
+	stmt = client.prepare("update sites set noticed = 1 where url = ? && keyword = ? && email = ?")
+	stmt.execute url, word, adress
+end
+
+def set_noticed_0(url, word, adress)
+	stmt = client.prepare("update sites set noticed = 0 where url = ? && keyword = ? && email = ?")
+	stmt.execute url, word, adress
 end
 
 def show_charset(url)
@@ -103,11 +113,11 @@ def notice(url, search_word, adress)
 end
 
 def shorten_string(arg)
-	if arg.include?("http") && arg.length >= 15 then
+	if arg.include?("http") && arg.length >= 50 then
 		arg = remove_https(arg)
-		arg = arg[0, 14] + "..." 
-	elsif arg.length >= 15 then
-		arg = arg[0, 14]  + "..."
+		arg = arg[0, 49] + "..." 
+	elsif arg.length >= 50 then
+		arg = arg[0, 49]  + "..."
 	end
 	return arg
 end

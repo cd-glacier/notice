@@ -1,32 +1,18 @@
-I, [2016-03-12T18:47:20.246880 #18922]  INFO -- : Starting clock for 1 events: [ work ]
-I, [2016-03-12T18:47:20.246991 #18922]  INFO -- : Triggering 'work'
-seeking in https://github.com/g-hyoga
-hoge
-hyoga0216@gmail.com
-utf-8
- 
-seeking in https://github.com/g-hyoga
-hogehoge
-hyoga0216@gmail.com
-utf-8
- 
-seeking in http://galaxyheavyblow.web.fc2.com/
-１０７
-hyoga0216@gmail.com
-iso-8859-1
- 
+I, [2016-03-17T04:41:58.712560 #3865]  INFO -- : Starting clock for 1 events: [ work ]
+I, [2016-03-17T04:41:58.712647 #3865]  INFO -- : Triggering 'work'
 seeking in http://galaxyheavyblow.web.fc2.com/
 107
 hyoga0216@gmail.com
 iso-8859-1
  
-seeking in https://github.com/g-hyoga/notice/issues
-open
+seeking in http://galaxyheavyblow.web.fc2.com/
+108
+hyoga0216@gmail.com
+iso-8859-1
+ 
+seeking in http://urasunday.com/takunomi/index.html
+16杯目
 hyoga0216@gmail.com
 utf-8
  
-seeking in https://test.com
-test
-hyoga0216@gmail.com
-
- 
+work end

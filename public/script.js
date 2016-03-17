@@ -26,6 +26,9 @@ $(function(){
 		var js_keyword = $(":text[id='keyword']").val();
 		var js_url = $("#url").val();
 		var js_email = $("#email").val();
+				console.log(js_keyword);
+				console.log(js_url);
+				console.log(js_email);
 		$.ajax({
 			type: 'POST',
 			url: '/notice',
@@ -35,9 +38,6 @@ $(function(){
 				email: js_email
 			},
 			success: function(json){
-				console.log(js_keyword);
-				console.log(js_url);
-				console.log(js_email);
 				alert("正常に操作が完了しました。");
 			}
 		});
@@ -62,4 +62,45 @@ $(function(){
 		});
 	});
 });
+
+////////config//////////
+
+$(function(){
+	$('#update_button').click(function(e){
+		e.preventDefault();
+		var js_notice_box = [];
+		var js_delete_box = [];
+		var js_length = this.data("length")
+		
+		for(var i = 0; i <= js_length; i++){
+			if ($("#notice_box" + i).is("checked")){
+				js_notice_box.push(1);	
+			}else{
+				js_notice_box.push(0);	
+			}
+
+			if($("#delete_box" + i).is("checked")){
+				js_delete_box.push($("#delete_box" + i).data("delete_box"));
+			}	
+			
+		}
+		$.ajax({
+			type: 'POST',
+			url: '/config',
+			data: {
+				notice_box: js_notice_box,
+				delete_box: js_delete_box
+			},
+			success: function(json){
+				console.log(js_keyword);
+				console.log(js_url);
+				console.log(js_email);
+				alert("正常に操作が完了しました。");
+			}
+		});
+	});
+});
+
+
+
 

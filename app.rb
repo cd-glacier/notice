@@ -1,6 +1,6 @@
 #encode utf-8
-#require '/projects/notice/adapt_ADE.rb'
-require './adapt_ADE.rb'
+require '/projects/notice/adapt_ADE.rb'
+#require './adapt_ADE.rb'
 path = show_adapted_path()
 require path + "pass.rb"
 require path + "notice.rb"
@@ -24,10 +24,12 @@ class NoticeWeb < Sinatra::Base
 		#@client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
 		#@client = Mysql.connect('localhost', 'root', nil, 'notice')
 		stmt = @client.query('create table if not exists sites (
-										keyword varchar(255),
-										url varchar(255),
-										email varchar(255),
-										noticed bool
+										id int not null auto_increment,
+										keyword varchar(255) not null,
+										url varchar(255) not null,
+										email varchar(255) not null,
+										noticed bool not null,
+										primary key(id)
 										)')
 	end
 
@@ -51,9 +53,9 @@ class NoticeWeb < Sinatra::Base
 		@checkbox = []
 		client.query("select noticed, url, keyword from sites where email = '" + params[:email] + "\'").each do |noticed, url, word|
 			@noticed << noticed
-			@url << url
-			@word <<  word
-			if noticed.to_i == 1 then 
+			@url << shorten_string(url)
+			@word <<  shorten_string(word)
+			if noticed.to_i == 0 then 
 				@checkbox << "checked = 'checked'"
 			else 
 				@checkbox	<< nil
@@ -67,7 +69,7 @@ class NoticeWeb < Sinatra::Base
 	post '/notice' do
 		url = add_https(params[:url])
 
-		insert_url(params[:keyword], url, params[:email])
+		insert_url(url, params[:keyword], params[:email])
 
 		redirect "/notice"
 	end
@@ -81,6 +83,10 @@ class NoticeWeb < Sinatra::Base
 		delete_url(params[:url], params[:keyword], params[:email])	
 
 		redirect "/notice"
+	end
+
+	post "config" do
+		#update
 	end
 
 end

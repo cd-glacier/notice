@@ -21,6 +21,7 @@ every(30.minutes, 'work')  do
 			puts " "
 		end
 	end
+	puts "work end"
 end
 
 

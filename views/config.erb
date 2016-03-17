@@ -9,7 +9,7 @@
 			<br>
 
 			<div id="config-wrapper">
-				<form action="POST">
+				<form action="post" action="config">
 					<table>
 						<thead>
 							<tr>
@@ -29,19 +29,19 @@
 										<div class="switch">
 											<label>
 												Off
-												<input type="checkbox" <%= @checkbox[i] %>>
+												<input type="checkbox" <%= @checkbox[i] %> id="notice_box<%= i %>">
 												<span class="lever"></span>
 												On
 											</label>
 										</div>
 									</td>
-									<td><input type="checkbox" id="box<%= i %>"><label for="box<%= i %>"></label></td>
+									<td><input type="checkbox" id="delete_box<%= i %>" data-delete_box="<%= i %>"><label for="delete_box<%= i %>"></label></td>
 								</tr>
 							<% end %>
 
 						</tbody>
 					</table>
-					<a class="waves-effect waves-light btn">update</a>
+					<button id="update_button" type="submit" class="waves-effect waves-light btn" data-length="<%= @word.length %>">update</button>
 				</form>
 			</div>
 		</div>

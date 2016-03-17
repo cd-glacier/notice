@@ -4,4 +4,4 @@ require "./notice.rb"
 s = "https://hoge.com"
 p = "http://hogehogehogehogehogeho.com"
 
-puts shorten_string(p)
+puts add_https(nil)
