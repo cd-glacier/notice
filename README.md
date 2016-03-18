@@ -1,5 +1,5 @@
 #webサイト通知サービス
-一応動いている
+なんか死んでる
 
  > http://glacier.space/notice 
 

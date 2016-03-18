@@ -41,24 +41,24 @@ def insert_url(url, word, adress)
 	stmt.execute word, url, adress
 end
 
-def delete_url(url, word, adress)
-	stmt = client.prepare("delete from sites where and url = ? word = ? email = ?")
-	stmt.execute url, word, adress
+def delete_url(id)
+	stmt = @client.prepare("delete from sites where id = ?")
+	stmt.execute id
 end
 
 def update_word(url, next_word, adress)
-	stmt = client.prepare("update notice set keyword = ? where email = ? and url = ?")
+	stmt = @client.prepare("update notice set keyword = ? where email = ? and url = ?")
 	stmt.execute next_word, adress, url
 end
 
-def set_noticed_1(url, word, adress)
-	stmt = client.prepare("update sites set noticed = 1 where url = ? && keyword = ? && email = ?")
-	stmt.execute url, word, adress
+def set_noticed_1(id)
+	stmt = @client.prepare("update sites set noticed = 1 where id = ?")
+	stmt.execute id
 end
 
-def set_noticed_0(url, word, adress)
-	stmt = client.prepare("update sites set noticed = 0 where url = ? && keyword = ? && email = ?")
-	stmt.execute url, word, adress
+def set_noticed_0(id)
+	stmt = @client.prepare("update sites set noticed = 0 where id = ?")
+	stmt.execute id
 end
 
 def show_charset(url)
