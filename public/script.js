@@ -65,36 +65,42 @@ $(function(){
 
 ////////config//////////
 
+//汚いので変えたい、でもめんどい
 $(function(){
 	$('#update_button').click(function(e){
 		e.preventDefault();
 		var js_notice_box = [];
+		var js_notice_box_id = [];
 		var js_delete_box = [];
-		var js_length = this.data("length")
+		var js_length = $("#update_button").data("length")
+		var js_email = $("#update_button").data("email")
 		
-		for(var i = 0; i <= js_length; i++){
-			if ($("#notice_box" + i).is("checked")){
-				js_notice_box.push(1);	
-			}else{
+		for(var i = 0; i < js_length; i++){
+			if ($("#notice_box" + i).is(":checked")){
+				//checked = 通知してない = 0
 				js_notice_box.push(0);	
+			}else{
+				js_notice_box.push(1);	
 			}
+			js_notice_box_id.push($("#notice_box" + i).data("notice_id"));	
 
-			if($("#delete_box" + i).is("checked")){
-				js_delete_box.push($("#delete_box" + i).data("delete_box"));
+			if($("#delete_box" + i).is(":checked")){
+				js_delete_box.push($("#delete_box" + i).data("delete_id"));
 			}	
 			
 		}
+		console.log(js_notice_box);
+		console.log(js_delete_box);
 		$.ajax({
 			type: 'POST',
 			url: '/config',
 			data: {
 				notice_box: js_notice_box,
-				delete_box: js_delete_box
+				delete_box: js_delete_box,
+				email: js_email,
+				notice_box_id: js_notice_box_id
 			},
 			success: function(json){
-				console.log(js_keyword);
-				console.log(js_url);
-				console.log(js_email);
 				alert("正常に操作が完了しました。");
 			}
 		});

@@ -47,11 +47,13 @@ class NoticeWeb < Sinatra::Base
 		client = connect_adapted_mysql()
 
 		@adress = params[:email]
+		@id = []
 		@url = []
 		@noticed = []
 		@word = []
 		@checkbox = []
-		client.query("select noticed, url, keyword from sites where email = '" + params[:email] + "\'").each do |noticed, url, word|
+		client.query("select noticed, url, keyword, id from sites where email = '" + params[:email] + "\'").each do |noticed, url, word, id|
+			@id << id
 			@noticed << noticed
 			@url << shorten_string(url)
 			@word <<  shorten_string(word)
@@ -79,14 +81,35 @@ class NoticeWeb < Sinatra::Base
 		redirect "/notice"
 	end
 
+=begin
 	delete  "/config/:email/:url/:keyword" do
 		delete_url(params[:url], params[:keyword], params[:email])	
 
 		redirect "/notice"
 	end
+=end
 
-	post "config" do
+	post '/config' do
+		#postでdeleteってどうなんや？？
+		#delete
+		unless params[:delete_box].nil? then
+			params[:delete_box].each do |id|
+				delete_url(id)
+			end
+		end
+
 		#update
+		params[:notice_box].length.times do |i|
+			if params[:notice_box][i].to_i == 0 then
+				set_noticed_0(params[:notice_box_id][i].to_i)
+			elsif params[:notice_box][i].to_i == 1 then
+				set_noticed_1(params[:notice_box_id][i].to_i)
+			else
+				puts "update error"
+			end	
+		end
+
+		redirect "/config/" + params[:email]
 	end
 
 end
