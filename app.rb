@@ -24,13 +24,13 @@ class NoticeWeb < Sinatra::Base
 		#@client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
 		#@client = Mysql.connect('localhost', 'root', nil, 'notice')
 		stmt = @client.query('create table if not exists sites (
-										id int not null auto_increment,
-										keyword varchar(255) not null,
-										url varchar(255) not null,
-										email varchar(255) not null,
-										noticed bool not null,
-										primary key(id)
-										)')
+													id int not null auto_increment,
+													keyword varchar(255) not null,
+													url varchar(255) not null,
+													email varchar(255) not null,
+													noticed bool not null,
+													primary key(id)
+													)')
 	end
 
 #########################################################################################
@@ -43,11 +43,16 @@ class NoticeWeb < Sinatra::Base
 		erb :home
 	end
 
+	get '/config' do
+		erb :config_start
+	end
+		
 	get '/config/:email' do
 		client = connect_adapted_mysql()
 
 		@adress = params[:email]
 		@id = []
+		@s_url = []
 		@url = []
 		@noticed = []
 		@word = []
@@ -55,7 +60,8 @@ class NoticeWeb < Sinatra::Base
 		client.query("select noticed, url, keyword, id from sites where email = '" + params[:email] + "\'").each do |noticed, url, word, id|
 			@id << id
 			@noticed << noticed
-			@url << shorten_string(url)
+			@s_url << shorten_string(url)
+			@url << url
 			@word <<  shorten_string(word)
 			if noticed.to_i == 0 then 
 				@checkbox << "checked = 'checked'"
@@ -79,6 +85,14 @@ class NoticeWeb < Sinatra::Base
 	post '/contact' do
 		gmail("hyoga0216@gmail.com", params[:contact_email], params[:message])	
 		redirect "/notice"
+	end
+
+	post '/sys' do
+		#if params[:email].nil? then
+		#	redirect "/config"
+		#else
+			redirect "/config/" + params[:email].to_s
+		#end
 	end
 
 =begin

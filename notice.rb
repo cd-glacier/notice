@@ -100,7 +100,7 @@ def notice(url, search_word, adress)
 		#if node.text.include?(search_word.force_encoding(html_charset[:charset])) then
 		if node.text.include?(search_word.force_encoding("UTF-8")) then
 			puts "keyword is discovered!"
-			content = search_word + " of " + url + "is up to date \n You can stop notice -> " + stop_url
+			content = "指定したurl(" + url + ")にkeyword(" + search_word + ")が登場したようです。 \n 通知の変更、削除をしたい場合はこちら -> " + stop_url
 			gmail(adress, "hyoga0216@gmail.com", content)
 			puts "send mail to " + adress
 			#noticed をtrueにする

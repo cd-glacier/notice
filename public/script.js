@@ -1,4 +1,8 @@
 $(function() {
+	$(".button-collapse").sideNav();
+});
+
+$(function() {
 	$(window).on('scroll', function() {
 		if ($(document).scrollTop() > 135) {
 			$('.fixbar').addClass('fixed');
@@ -102,6 +106,26 @@ $(function(){
 			},
 			success: function(json){
 				alert("正常に操作が完了しました。");
+			}
+		});
+	});
+});
+
+////////config_start//////////
+
+$(function(){
+	$('#sys_button').click(function(e){
+		//e.preventDefault();
+		var js_email = $("#config_email").val();
+		var email = ""
+		console.log(js_email);
+		$.ajax({
+			type: 'POST',
+			url: '/sys',
+			data: {
+				email: js_email
+			},
+			success: function(json){
 			}
 		});
 	});

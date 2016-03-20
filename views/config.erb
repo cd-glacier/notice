@@ -10,37 +10,36 @@
 
 			<div id="config-wrapper">
 				<form action="post" action="config">
-					<table>
+					<table class="responsive-table">
 						<thead>
 							<tr>
-								<th>keyword</th>
-								<th>URL</th>
-								<th>通知</th>
+								<th data-field="word">keyword</th>
+								<th data-field="url">URL</th>
+								<th data-field="notice">通知</th>
 								<th>削除</th>
 							</tr>
 						</thead>
 						<tbody>
-							<% @word.length.times do |i|%>
-								<tr>
-									<td><%= h @word[i].force_encoding("UTF-8") %></td>
-									<td><%= h @url[i].force_encoding("UTF-8") %></td>
-									<td>
-
-										<div class="switch">
-											<label>
-												Off
-												<input type="checkbox" <%= @checkbox[i] %> id="notice_box<%= i %>" data-notice_id="<%= @id[i] %>">
-												<span class="lever"></span>
-												On
-											</label>
-										</div>
-									</td>
-									<td><input type="checkbox" id="delete_box<%= i %>" data-delete_id="<%= @id[i] %>"><label for="delete_box<%= i %>"></label></td>
-								</tr>
-							<% end %>
-
+						<% @word.length.times do |i|%>
+							<tr>
+							<td><%= h @word[i].force_encoding("UTF-8") %></td>
+							<td><a href="<%= h @url[i] %>" class="url"><%= h @s_url[i].force_encoding("UTF-8") %></a></td>
+							<td>
+								<div class="switch">
+									<label>
+										Off
+										<input type="checkbox" <%= @checkbox[i] %> id="notice_box<%= i %>" data-notice_id="<%= @id[i] %>">
+										<span class="lever"></span>
+										On
+									</label>
+								</div>
+							</td>
+							<td><input type="checkbox" id="delete_box<%= i %>" data-delete_id="<%= @id[i] %>"><label for="delete_box<%= i %>"></label></td>
+						</tr>
+					<% end %>
 						</tbody>
 					</table>
+
 					<button id="update_button" type="submit" class="waves-effect waves-light btn" data-length="<%= @word.length %>" data-email="<%= @adress %>">update</button>
 				</form>
 			</div>

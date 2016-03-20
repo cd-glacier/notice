@@ -38,12 +38,6 @@ body {
 	visibility: visible;
 }
 
-.link_div {
-	width: 25%;
-	float: left;
-	font-size: 25px;
-}
-
 .link{
 	color: #F2F2F2;
 	text-decoration: none;
@@ -130,5 +124,59 @@ p {
 
 #config-wrapper {
 	margin: 10 auto;
+}
+
+.url {
+	text-decoration: underline;
+	color: #5E5D5D;
+}
+
+
+/*config_start.erb*/
+
+.conf {
+	margin: auto;
+}
+
+
+
+/*phone*/
+
+@media screen and ( max-width:479px ){
+	.contents {
+		position: relative;
+		width: 90%;
+		margin: 10px auto;
+		text-align: left;
+	}	
+
+	#img_1 {
+		width: 300;	
+	}
+
+	#img_2 {
+		width: 210;	
+	}
+
+	.img_div {
+		text-align: center;
+		float: none;
+	}
+
+
+	p {
+		display: inline-block;
+		color: #E08170;
+		margin: 0;
+		font-size: 15;
+	}
+
+	.para {
+		display: block;
+		color: #5E5D5D;
+		font-size: 15;
+	}
+
+
 }
 
