@@ -726,3 +726,822 @@ I, [2016-03-20T14:28:59.160401 #23756]  INFO -- : worker=0 ready
 61.46.224.158 - - [20/Mar/2016:14:46:55 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0017
 61.46.224.158 - - [20/Mar/2016:14:46:55 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0020
 61.46.224.158 - - [20/Mar/2016:14:46:55 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:14:52:10 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6447 0.0043
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 200 191870 0.0133
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /material.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:14:52:11 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:14:52:18 +0900] "GET / HTTP/1.0" 200 6533 0.0057
+61.46.224.158 - - [20/Mar/2016:14:52:18 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:14:52:41 +0900] "GET /config HTTP/1.0" 200 3707 0.0065
+61.46.224.158 - - [20/Mar/2016:14:52:41 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:14:52:46 +0900] "POST /sys HTTP/1.0" 302 - 0.0020
+61.46.224.158 - - [20/Mar/2016:14:52:46 +0900] "POST /sys HTTP/1.0" 302 - 0.0015
+61.46.224.158 - - [20/Mar/2016:14:52:46 +0900] "GET /config/ HTTP/1.0" 404 512 0.0017
+61.46.224.158 - - [20/Mar/2016:14:52:46 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6447 0.0047
+61.46.224.158 - - [20/Mar/2016:14:52:52 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6447 0.0047
+61.46.224.158 - - [20/Mar/2016:14:52:52 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6463 0.0050
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /material.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:14:55:10 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6463 0.0049
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /material.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:14:55:11 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:00:21 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6694 0.0195
+61.46.224.158 - - [20/Mar/2016:15:00:21 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:00:21 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:00:21 +0900] "GET /material.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:00:21 +0900] "GET /script.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:00:21 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:00:30 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6694 0.0044
+61.46.224.158 - - [20/Mar/2016:15:00:30 +0900] "GET /style.css HTTP/1.0" 304 - 0.0015
+61.46.224.158 - - [20/Mar/2016:15:00:30 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0024
+61.46.224.158 - - [20/Mar/2016:15:00:30 +0900] "GET /material.js HTTP/1.0" 304 - 0.0018
+61.46.224.158 - - [20/Mar/2016:15:00:30 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:00:30 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:00:34 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6694 0.0056
+61.46.224.158 - - [20/Mar/2016:15:00:34 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:00:34 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:00:34 +0900] "GET /script.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:00:34 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:00:34 +0900] "GET /style.css HTTP/1.0" 304 - 0.0018
+61.46.224.158 - - [20/Mar/2016:15:00:36 +0900] "GET / HTTP/1.0" 200 6764 0.0047
+61.46.224.158 - - [20/Mar/2016:15:01:07 +0900] "GET / HTTP/1.0" 200 6764 0.0082
+61.46.224.158 - - [20/Mar/2016:15:01:07 +0900] "GET /style.css HTTP/1.0" 304 - 0.0015
+61.46.224.158 - - [20/Mar/2016:15:01:07 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:15:01:07 +0900] "GET /material.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:15:01:07 +0900] "GET /script.js HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:15:01:07 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:01:07 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:01:07 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:01:07 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:01:52 +0900] "GET / HTTP/1.0" 200 6764 0.0049
+61.46.224.158 - - [20/Mar/2016:15:01:52 +0900] "GET /style.css HTTP/1.0" 200 1801 0.0013
+61.46.224.158 - - [20/Mar/2016:15:01:52 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:01:52 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:01:52 +0900] "GET /script.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:01:52 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:01:52 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:01:52 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:01:52 +0900] "GET /images/2.png HTTP/1.0" 200 11873 0.0024
+61.46.224.158 - - [20/Mar/2016:15:02:01 +0900] "GET / HTTP/1.0" 200 6764 0.0046
+61.46.224.158 - - [20/Mar/2016:15:02:02 +0900] "GET /style.css HTTP/1.0" 200 1895 0.0012
+61.46.224.158 - - [20/Mar/2016:15:02:02 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:02:02 +0900] "GET /material.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:02:02 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:02:02 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:02:02 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:02:02 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:02:11 +0900] "GET / HTTP/1.0" 200 6764 0.0059
+61.46.224.158 - - [20/Mar/2016:15:02:11 +0900] "GET /style.css HTTP/1.0" 304 - 0.0015
+61.46.224.158 - - [20/Mar/2016:15:02:11 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:02:11 +0900] "GET /material.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:02:11 +0900] "GET /script.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:02:11 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:02:11 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:02:11 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:02:26 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6694 0.0043
+61.46.224.158 - - [20/Mar/2016:15:02:26 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:02:26 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:02:26 +0900] "GET /material.js HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:15:02:26 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:02:26 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:03:29 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6830 0.0064
+61.46.224.158 - - [20/Mar/2016:15:03:30 +0900] "GET /style.css HTTP/1.0" 200 1895 0.0010
+61.46.224.158 - - [20/Mar/2016:15:03:30 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:15:03:30 +0900] "GET /script.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:03:30 +0900] "GET /material.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:03:30 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:04:48 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6830 0.0067
+61.46.224.158 - - [20/Mar/2016:15:04:48 +0900] "GET /style.css HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:05:16 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6830 0.0070
+61.46.224.158 - - [20/Mar/2016:15:05:16 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:05:16 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:05:16 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:05:16 +0900] "GET /material.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:15:05:16 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:05:18 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6830 0.0045
+61.46.224.158 - - [20/Mar/2016:15:05:18 +0900] "GET /material.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:05:18 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:05:18 +0900] "GET /style.css HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:05:18 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:05:18 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+I, [2016-03-20T15:05:43.446660 #23753]  INFO -- : reaped #<Process::Status: pid 23756 exit 0> worker=0
+I, [2016-03-20T15:05:43.446844 #23753]  INFO -- : reaped #<Process::Status: pid 23758 exit 0> worker=1
+I, [2016-03-20T15:05:43.446962 #23753]  INFO -- : master complete
+I, [2016-03-20T15:05:48.764389 #24279]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T15:05:48.764624 #24279]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T15:05:48.764749 #24279]  INFO -- : worker=0 spawning...
+I, [2016-03-20T15:05:48.766033 #24279]  INFO -- : worker=1 spawning...
+I, [2016-03-20T15:05:48.766516 #24279]  INFO -- : master process ready
+I, [2016-03-20T15:05:48.767181 #24282]  INFO -- : worker=0 spawned pid=24282
+I, [2016-03-20T15:05:48.767321 #24282]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:05:48.773672 #24284]  INFO -- : worker=1 spawned pid=24284
+I, [2016-03-20T15:05:48.773828 #24284]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:05:49.095540 #24284]  INFO -- : worker=1 ready
+I, [2016-03-20T15:05:49.097923 #24282]  INFO -- : worker=0 ready
+61.46.224.158 - - [20/Mar/2016:15:05:50 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6741 0.0264
+61.46.224.158 - - [20/Mar/2016:15:05:50 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0020
+61.46.224.158 - - [20/Mar/2016:15:05:50 +0900] "GET /material.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:05:50 +0900] "GET /script.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:05:50 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:05:50 +0900] "GET /style.css HTTP/1.0" 304 - 0.0296
+61.46.224.158 - - [20/Mar/2016:15:06:26 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6725 0.0127
+61.46.224.158 - - [20/Mar/2016:15:06:26 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:06:26 +0900] "GET /material.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:06:26 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0019
+61.46.224.158 - - [20/Mar/2016:15:06:26 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:06:26 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:09:13 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 7208 0.0057
+61.46.224.158 - - [20/Mar/2016:15:09:13 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:09:13 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:09:13 +0900] "GET /script.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:09:13 +0900] "GET /material.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:09:13 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:10:01 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6725 0.0050
+61.46.224.158 - - [20/Mar/2016:15:10:01 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:10:01 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:10:01 +0900] "GET /material.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:10:01 +0900] "GET /script.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:10:01 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:10:08 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6725 0.0045
+61.46.224.158 - - [20/Mar/2016:15:10:08 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:10:08 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:10:08 +0900] "GET /material.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:10:08 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:10:08 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:10:37 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6725 0.0048
+61.46.224.158 - - [20/Mar/2016:15:10:37 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:10:37 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:15:10:37 +0900] "GET /material.js HTTP/1.0" 304 - 0.0022
+61.46.224.158 - - [20/Mar/2016:15:10:37 +0900] "GET /script.js HTTP/1.0" 304 - 0.0026
+61.46.224.158 - - [20/Mar/2016:15:10:37 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:11:13 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6741 0.0053
+61.46.224.158 - - [20/Mar/2016:15:11:13 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:11:13 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:11:13 +0900] "GET /material.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:11:13 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0016
+61.46.224.158 - - [20/Mar/2016:15:11:13 +0900] "GET /script.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:11:34 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6683 0.0079
+61.46.224.158 - - [20/Mar/2016:15:11:34 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:11:34 +0900] "GET /material.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:11:34 +0900] "GET /script.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:11:34 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0129
+61.46.224.158 - - [20/Mar/2016:15:11:43 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6673 0.0057
+61.46.224.158 - - [20/Mar/2016:15:11:43 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:11:44 +0900] "GET /material.js HTTP/1.0" 304 - 0.0021
+61.46.224.158 - - [20/Mar/2016:15:11:44 +0900] "GET /script.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:11:44 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:11:51 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6741 0.0058
+61.46.224.158 - - [20/Mar/2016:15:11:51 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:11:51 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:11:51 +0900] "GET /material.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:11:51 +0900] "GET /script.js HTTP/1.0" 304 - 0.0156
+61.46.224.158 - - [20/Mar/2016:15:11:51 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0017
+61.46.224.158 - - [20/Mar/2016:15:12:30 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6681 0.0058
+61.46.224.158 - - [20/Mar/2016:15:12:30 +0900] "GET /style.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:12:30 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:12:30 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:12:30 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:15:13:25 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6741 0.0053
+61.46.224.158 - - [20/Mar/2016:15:13:25 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:13:25 +0900] "GET /material.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:13:25 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:13:25 +0900] "GET /script.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:13:25 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:15:00 +0900] "GET / HTTP/1.0" 200 6900 0.0056
+61.46.224.158 - - [20/Mar/2016:15:15:01 +0900] "GET /style.css HTTP/1.0" 200 1895 0.0019
+61.46.224.158 - - [20/Mar/2016:15:15:01 +0900] "GET /script.js HTTP/1.0" 200 2775 0.0010
+61.46.224.158 - - [20/Mar/2016:15:15:01 +0900] "GET /footerFixed.js HTTP/1.0" 200 1911 0.0009
+61.46.224.158 - - [20/Mar/2016:15:15:02 +0900] "GET /favicon.ico HTTP/1.0" 404 511 0.0017
+61.46.224.158 - - [20/Mar/2016:15:15:17 +0900] "GET /config HTTP/1.0" 200 4074 0.0064
+61.46.224.158 - - [20/Mar/2016:15:15:29 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6725 0.0067
+61.46.224.158 - - [20/Mar/2016:15:16:00 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6725 0.0055
+61.46.224.158 - - [20/Mar/2016:15:16:00 +0900] "GET /style.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:16:00 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:16:00 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:16:00 +0900] "GET /script.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:16:00 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:16:29 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6725 0.0083
+61.46.224.158 - - [20/Mar/2016:15:16:29 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:16:29 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:16:29 +0900] "GET /material.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:16:29 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:16:29 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:18:58 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6725 0.0089
+61.46.224.158 - - [20/Mar/2016:15:18:58 +0900] "GET /style.css HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:15:18:58 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:18:58 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:18:58 +0900] "GET /script.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:18:58 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+I, [2016-03-20T15:19:20.785952 #24279]  INFO -- : reaped #<Process::Status: pid 24282 exit 0> worker=0
+I, [2016-03-20T15:19:20.786053 #24279]  INFO -- : reaped #<Process::Status: pid 24284 exit 0> worker=1
+I, [2016-03-20T15:19:20.786133 #24279]  INFO -- : master complete
+I, [2016-03-20T15:19:26.095748 #24502]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T15:19:26.095944 #24502]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T15:19:26.096034 #24502]  INFO -- : worker=0 spawning...
+I, [2016-03-20T15:19:26.097902 #24502]  INFO -- : worker=1 spawning...
+I, [2016-03-20T15:19:26.098258 #24502]  INFO -- : master process ready
+I, [2016-03-20T15:19:26.098689 #24505]  INFO -- : worker=0 spawned pid=24505
+I, [2016-03-20T15:19:26.098793 #24505]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:19:26.101778 #24507]  INFO -- : worker=1 spawned pid=24507
+I, [2016-03-20T15:19:26.101913 #24507]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:19:26.431449 #24507]  INFO -- : worker=1 ready
+I, [2016-03-20T15:19:26.433350 #24505]  INFO -- : worker=0 ready
+61.46.224.158 - - [20/Mar/2016:15:19:27 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6814 0.0295
+61.46.224.158 - - [20/Mar/2016:15:19:27 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:19:27 +0900] "GET /material.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:19:27 +0900] "GET /script.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:19:27 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:19:27 +0900] "GET /style.css HTTP/1.0" 304 - 0.0296
+61.46.224.158 - - [20/Mar/2016:15:19:53 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6814 0.0089
+61.46.224.158 - - [20/Mar/2016:15:19:53 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:19:53 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:19:53 +0900] "GET /script.js HTTP/1.0" 304 - 0.0023
+61.46.224.158 - - [20/Mar/2016:15:19:53 +0900] "GET /material.js HTTP/1.0" 304 - 0.0017
+61.46.224.158 - - [20/Mar/2016:15:19:53 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:25:00 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6830 0.0061
+61.46.224.158 - - [20/Mar/2016:15:25:00 +0900] "GET /style.css HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:15:25:00 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:15:25:00 +0900] "GET /material.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:15:25:00 +0900] "GET /script.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:25:00 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6599 0.0048
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /style.css HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /material.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:27:01 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:37:51 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6117 0.0045
+61.46.224.158 - - [20/Mar/2016:15:37:51 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:37:51 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:37:51 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:37:51 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:37:51 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:37:51 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:37:51 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 200 278616 0.0099
+61.46.224.158 - - [20/Mar/2016:15:37:52 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:37:52 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:37:52 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0059
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /style.css HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /script.js HTTP/1.0" 304 - 0.0005
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /material.js HTTP/1.0" 304 - 0.0146
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:38:11 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0149
+61.46.224.158 - - [20/Mar/2016:15:38:29 +0900] "GET /config HTTP/1.0" 200 3361 0.0049
+I, [2016-03-20T15:52:10.592643 #24502]  INFO -- : reaped #<Process::Status: pid 24505 exit 0> worker=0
+I, [2016-03-20T15:52:10.592774 #24502]  INFO -- : reaped #<Process::Status: pid 24507 exit 0> worker=1
+I, [2016-03-20T15:52:10.592909 #24502]  INFO -- : master complete
+I, [2016-03-20T15:52:13.514755 #25113]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T15:52:13.514928 #25113]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T15:52:13.515036 #25113]  INFO -- : worker=0 spawning...
+I, [2016-03-20T15:52:13.517854 #25113]  INFO -- : worker=1 spawning...
+I, [2016-03-20T15:52:13.518218 #25113]  INFO -- : master process ready
+I, [2016-03-20T15:52:13.518696 #25116]  INFO -- : worker=0 spawned pid=25116
+I, [2016-03-20T15:52:13.518795 #25116]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:52:13.521759 #25118]  INFO -- : worker=1 spawned pid=25118
+I, [2016-03-20T15:52:13.521868 #25118]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:52:13.845359 #25118]  INFO -- : worker=1 ready
+I, [2016-03-20T15:52:13.849402 #25116]  INFO -- : worker=0 ready
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /config HTTP/1.0" 200 3361 0.0265
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0222
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0015
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /style.css HTTP/1.0" 304 - 0.0025
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0026
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /material.js HTTP/1.0" 304 - 0.0027
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /script.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:52:16 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0011
+2016-03-20 15:52:22 - NoMethodError - undefined method `[]' for nil:NilClass:
+	/projects/notice/app.rb:94:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+61.46.224.158 - - [20/Mar/2016:15:52:22 +0900] "POST /sys HTTP/1.0" 302 - 0.0042
+61.46.224.158 - - [20/Mar/2016:15:52:22 +0900] "GET /config/y HTTP/1.0" 200 3360 0.0109
+61.46.224.158 - - [20/Mar/2016:15:52:22 +0900] "POST /sys HTTP/1.0" 500 149760 0.0894
+I, [2016-03-20T15:53:14.844175 #25113]  INFO -- : reaped #<Process::Status: pid 25116 exit 0> worker=0
+I, [2016-03-20T15:53:14.844321 #25113]  INFO -- : reaped #<Process::Status: pid 25118 exit 0> worker=1
+I, [2016-03-20T15:53:14.844424 #25113]  INFO -- : master complete
+I, [2016-03-20T15:53:17.124689 #25170]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T15:53:17.124848 #25170]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T15:53:17.124974 #25170]  INFO -- : worker=0 spawning...
+I, [2016-03-20T15:53:17.125808 #25170]  INFO -- : worker=1 spawning...
+I, [2016-03-20T15:53:17.126179 #25170]  INFO -- : master process ready
+I, [2016-03-20T15:53:17.126596 #25173]  INFO -- : worker=0 spawned pid=25173
+I, [2016-03-20T15:53:17.126692 #25173]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:53:17.128657 #25175]  INFO -- : worker=1 spawned pid=25175
+I, [2016-03-20T15:53:17.128748 #25175]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:53:17.456704 #25173]  INFO -- : worker=0 ready
+I, [2016-03-20T15:53:17.465591 #25175]  INFO -- : worker=1 ready
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /config HTTP/1.0" 200 3361 0.0377
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /style.css HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /script.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0311
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0015
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:15:53:19 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:53:23 +0900] "POST /sys HTTP/1.0" 302 - 0.0039
+2016-03-20 15:53:23 - NoMethodError - undefined method `[]' for nil:NilClass:
+	/projects/notice/app.rb:91:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+61.46.224.158 - - [20/Mar/2016:15:53:23 +0900] "GET /config/h HTTP/1.0" 200 3360 0.0042
+61.46.224.158 - - [20/Mar/2016:15:53:23 +0900] "POST /sys HTTP/1.0" 500 149744 0.0658
+I, [2016-03-20T15:54:12.126323 #25170]  INFO -- : reaped #<Process::Status: pid 25173 exit 0> worker=0
+I, [2016-03-20T15:54:12.126429 #25170]  INFO -- : reaped #<Process::Status: pid 25175 exit 0> worker=1
+I, [2016-03-20T15:54:12.126510 #25170]  INFO -- : master complete
+I, [2016-03-20T15:54:14.784078 #25243]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T15:54:14.784351 #25243]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T15:54:14.784503 #25243]  INFO -- : worker=0 spawning...
+I, [2016-03-20T15:54:14.785039 #25243]  INFO -- : worker=1 spawning...
+I, [2016-03-20T15:54:14.785581 #25243]  INFO -- : master process ready
+I, [2016-03-20T15:54:14.786274 #25246]  INFO -- : worker=0 spawned pid=25246
+I, [2016-03-20T15:54:14.786434 #25246]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:54:14.791317 #25248]  INFO -- : worker=1 spawned pid=25248
+I, [2016-03-20T15:54:14.791506 #25248]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:54:15.115490 #25246]  INFO -- : worker=0 ready
+I, [2016-03-20T15:54:15.140021 #25248]  INFO -- : worker=1 ready
+61.46.224.158 - - [20/Mar/2016:15:54:16 +0900] "GET /config HTTP/1.0" 200 3361 0.0288
+61.46.224.158 - - [20/Mar/2016:15:54:16 +0900] "GET /style.css HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:15:54:16 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0042
+61.46.224.158 - - [20/Mar/2016:15:54:16 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:54:16 +0900] "GET /material.js HTTP/1.0" 304 - 0.0052
+61.46.224.158 - - [20/Mar/2016:15:54:16 +0900] "GET /script.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:54:16 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:54:16 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0391
+61.46.224.158 - - [20/Mar/2016:15:54:17 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:54:17 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:54:20 +0900] "POST /sys HTTP/1.0" 302 - 0.0029
+61.46.224.158 - - [20/Mar/2016:15:54:20 +0900] "POST /sys HTTP/1.0" 302 - 0.0015
+61.46.224.158 - - [20/Mar/2016:15:54:21 +0900] "GET /config/ HTTP/1.0" 404 512 0.0037
+61.46.224.158 - - [20/Mar/2016:15:54:21 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0087
+I, [2016-03-20T15:56:30.178398 #25243]  INFO -- : reaped #<Process::Status: pid 25246 exit 0> worker=0
+I, [2016-03-20T15:56:30.178543 #25243]  INFO -- : reaped #<Process::Status: pid 25248 exit 0> worker=1
+I, [2016-03-20T15:56:30.178660 #25243]  INFO -- : master complete
+I, [2016-03-20T15:56:34.848979 #25328]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T15:56:34.849147 #25328]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T15:56:34.849227 #25328]  INFO -- : worker=0 spawning...
+I, [2016-03-20T15:56:34.849815 #25328]  INFO -- : worker=1 spawning...
+I, [2016-03-20T15:56:34.850137 #25328]  INFO -- : master process ready
+I, [2016-03-20T15:56:34.850562 #25331]  INFO -- : worker=0 spawned pid=25331
+I, [2016-03-20T15:56:34.850662 #25331]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:56:34.853752 #25333]  INFO -- : worker=1 spawned pid=25333
+I, [2016-03-20T15:56:34.853860 #25333]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:56:35.187754 #25333]  INFO -- : worker=1 ready
+I, [2016-03-20T15:56:35.188912 #25331]  INFO -- : worker=0 ready
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /config HTTP/1.0" 200 3361 0.0292
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /script.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0229
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:56:38 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:56:41 +0900] "POST /sys HTTP/1.0" 302 - 0.0050
+61.46.224.158 - - [20/Mar/2016:15:56:41 +0900] "POST /sys HTTP/1.0" 302 - 0.0064
+61.46.224.158 - - [20/Mar/2016:15:56:41 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0075
+61.46.224.158 - - [20/Mar/2016:15:56:41 +0900] "GET /config/ HTTP/1.0" 404 512 0.0015
+I, [2016-03-20T15:58:00.693815 #25328]  INFO -- : reaped #<Process::Status: pid 25331 exit 0> worker=0
+I, [2016-03-20T15:58:00.694019 #25328]  INFO -- : reaped #<Process::Status: pid 25333 exit 0> worker=1
+I, [2016-03-20T15:58:00.694159 #25328]  INFO -- : master complete
+I, [2016-03-20T15:58:02.564255 #25397]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T15:58:02.564444 #25397]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T15:58:02.564549 #25397]  INFO -- : worker=0 spawning...
+I, [2016-03-20T15:58:02.565844 #25397]  INFO -- : worker=1 spawning...
+I, [2016-03-20T15:58:02.566248 #25400]  INFO -- : worker=0 spawned pid=25400
+I, [2016-03-20T15:58:02.566345 #25400]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:58:02.568357 #25397]  INFO -- : master process ready
+I, [2016-03-20T15:58:02.573863 #25403]  INFO -- : worker=1 spawned pid=25403
+I, [2016-03-20T15:58:02.574015 #25403]  INFO -- : Refreshing Gem list
+I, [2016-03-20T15:58:02.902747 #25400]  INFO -- : worker=0 ready
+I, [2016-03-20T15:58:02.908418 #25403]  INFO -- : worker=1 ready
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /config HTTP/1.0" 200 3361 0.0254
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /script.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0215
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:58:04 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:15:58:07 +0900] "POST /sys HTTP/1.0" 302 - 0.0037
+61.46.224.158 - - [20/Mar/2016:15:58:07 +0900] "POST /sys HTTP/1.0" 302 - 0.0059
+61.46.224.158 - - [20/Mar/2016:15:58:07 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0051
+61.46.224.158 - - [20/Mar/2016:15:58:07 +0900] "GET /config/ HTTP/1.0" 404 512 0.0020
+61.46.224.158 - - [20/Mar/2016:15:58:18 +0900] "POST /sys HTTP/1.0" 302 - 0.0015
+61.46.224.158 - - [20/Mar/2016:15:58:18 +0900] "POST /sys HTTP/1.0" 302 - 0.0015
+61.46.224.158 - - [20/Mar/2016:15:58:18 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0057
+61.46.224.158 - - [20/Mar/2016:15:58:18 +0900] "GET /config/ HTTP/1.0" 404 512 0.0020
+61.46.224.158 - - [20/Mar/2016:15:58:32 +0900] "POST /sys HTTP/1.0" 302 - 0.0019
+61.46.224.158 - - [20/Mar/2016:15:58:32 +0900] "POST /sys HTTP/1.0" 302 - 0.0014
+61.46.224.158 - - [20/Mar/2016:15:58:32 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0064
+61.46.224.158 - - [20/Mar/2016:15:58:32 +0900] "GET /config/ HTTP/1.0" 404 512 0.0018
+61.46.224.158 - - [20/Mar/2016:15:58:36 +0900] "GET /config/ HTTP/1.0" 404 512 0.0015
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /config HTTP/1.0" 200 3361 0.0044
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /style.css HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /script.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:58:40 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:15:58:42 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0052
+61.46.224.158 - - [20/Mar/2016:15:58:43 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:58:47 +0900] "GET /config/ HTTP/1.0" 404 512 0.0017
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /config HTTP/1.0" 200 3361 0.0040
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /material.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /script.js HTTP/1.0" 200 2795 0.0011
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:15:59:43 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0142
+61.46.224.158 - - [20/Mar/2016:15:59:46 +0900] "POST /sys HTTP/1.0" 302 - 0.0015
+61.46.224.158 - - [20/Mar/2016:15:59:46 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0058
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /config HTTP/1.0" 200 3361 0.0058
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /style.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /material.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /script.js HTTP/1.0" 200 2798 0.0008
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:00:18 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:00:22 +0900] "POST /sys HTTP/1.0" 302 - 0.0136
+61.46.224.158 - - [20/Mar/2016:16:00:22 +0900] "POST /sys HTTP/1.0" 302 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:00:22 +0900] "GET /config/ HTTP/1.0" 404 512 0.0018
+61.46.224.158 - - [20/Mar/2016:16:00:22 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0051
+61.46.224.158 - - [20/Mar/2016:16:00:31 +0900] "POST /sys HTTP/1.0" 302 - 0.0032
+61.46.224.158 - - [20/Mar/2016:16:00:31 +0900] "POST /sys HTTP/1.0" 302 - 0.0040
+61.46.224.158 - - [20/Mar/2016:16:00:31 +0900] "GET /config/ HTTP/1.0" 404 512 0.0025
+61.46.224.158 - - [20/Mar/2016:16:00:31 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0052
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /config HTTP/1.0" 200 3361 0.0039
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /style.css HTTP/1.0" 304 - 0.0023
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0019
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /material.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /script.js HTTP/1.0" 200 2796 0.0012
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:00:34 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:16:00:37 +0900] "POST /sys HTTP/1.0" 302 - 0.0019
+61.46.224.158 - - [20/Mar/2016:16:00:37 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0072
+61.46.224.158 - - [20/Mar/2016:16:01:59 +0900] "GET /config HTTP/1.0" 200 3361 0.0049
+61.46.224.158 - - [20/Mar/2016:16:02:00 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:02:00 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:02:00 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:02:00 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:16:02:00 +0900] "GET /material.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:16:02:00 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0026
+61.46.224.158 - - [20/Mar/2016:16:02:00 +0900] "GET /script.js HTTP/1.0" 200 2773 0.0028
+61.46.224.158 - - [20/Mar/2016:16:02:00 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:02:00 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:02:03 +0900] "POST /sys HTTP/1.0" 302 - 0.0022
+61.46.224.158 - - [20/Mar/2016:16:02:03 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0085
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /config HTTP/1.0" 200 3361 0.0033
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /material.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /script.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:02:51 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:16:02:55 +0900] "POST /sys HTTP/1.0" 302 - 0.0021
+61.46.224.158 - - [20/Mar/2016:16:02:55 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0064
+I, [2016-03-20T16:03:40.380562 #25397]  INFO -- : reaped #<Process::Status: pid 25400 exit 0> worker=0
+I, [2016-03-20T16:03:40.380742 #25397]  INFO -- : reaped #<Process::Status: pid 25403 exit 0> worker=1
+I, [2016-03-20T16:03:40.380938 #25397]  INFO -- : master complete
+I, [2016-03-20T16:03:42.264171 #25523]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T16:03:42.264398 #25523]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T16:03:42.264496 #25523]  INFO -- : worker=0 spawning...
+I, [2016-03-20T16:03:42.265859 #25523]  INFO -- : worker=1 spawning...
+I, [2016-03-20T16:03:42.266310 #25526]  INFO -- : worker=0 spawned pid=25526
+I, [2016-03-20T16:03:42.266402 #25526]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:03:42.268627 #25523]  INFO -- : master process ready
+I, [2016-03-20T16:03:42.273781 #25529]  INFO -- : worker=1 spawned pid=25529
+I, [2016-03-20T16:03:42.273912 #25529]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:03:42.599468 #25529]  INFO -- : worker=1 ready
+I, [2016-03-20T16:03:42.599790 #25526]  INFO -- : worker=0 ready
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /config HTTP/1.0" 200 3361 0.0293
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0253
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /style.css HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0024
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0030
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /material.js HTTP/1.0" 304 - 0.0015
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /script.js HTTP/1.0" 200 2773 0.0016
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:03:43 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0025
+61.46.224.158 - - [20/Mar/2016:16:03:46 +0900] "POST /sys HTTP/1.0" 302 - 0.0060
+61.46.224.158 - - [20/Mar/2016:16:03:47 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0076
+I, [2016-03-20T16:05:31.998691 #25523]  INFO -- : reaped #<Process::Status: pid 25526 exit 0> worker=0
+I, [2016-03-20T16:05:31.998830 #25523]  INFO -- : reaped #<Process::Status: pid 25529 exit 0> worker=1
+I, [2016-03-20T16:05:31.998922 #25523]  INFO -- : master complete
+I, [2016-03-20T16:05:36.075945 #25612]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T16:05:36.076133 #25612]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T16:05:36.076222 #25612]  INFO -- : worker=0 spawning...
+I, [2016-03-20T16:05:36.077794 #25612]  INFO -- : worker=1 spawning...
+I, [2016-03-20T16:05:36.078206 #25612]  INFO -- : master process ready
+I, [2016-03-20T16:05:36.078758 #25615]  INFO -- : worker=0 spawned pid=25615
+I, [2016-03-20T16:05:36.078882 #25615]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:05:36.081726 #25617]  INFO -- : worker=1 spawned pid=25617
+I, [2016-03-20T16:05:36.081827 #25617]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:05:36.402731 #25617]  INFO -- : worker=1 ready
+I, [2016-03-20T16:05:36.407918 #25615]  INFO -- : worker=0 ready
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /config HTTP/1.0" 200 3361 0.0303
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0237
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /style.css HTTP/1.0" 304 - 0.0028
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0023
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0021
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /material.js HTTP/1.0" 304 - 0.0020
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /script.js HTTP/1.0" 200 2772 0.0011
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:05:40 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:05:43 +0900] "GET /sys?email=hyoga0216%40gmail.com HTTP/1.0" 302 - 0.0021
+61.46.224.158 - - [20/Mar/2016:16:05:43 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0078
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /config HTTP/1.0" 200 3361 0.0063
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /material.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /script.js HTTP/1.0" 200 2918 0.0018
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:10:30 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:16:10:33 +0900] "POST /sys HTTP/1.0" 404 504 0.0034
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /config HTTP/1.0" 200 3361 0.0035
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0024
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /style.css HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0017
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /script.js HTTP/1.0" 304 - 0.0018
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /material.js HTTP/1.0" 304 - 0.0024
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:10:40 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:10:49 +0900] "POST /sys HTTP/1.0" 404 504 0.0035
+I, [2016-03-20T16:11:11.276077 #25612]  INFO -- : reaped #<Process::Status: pid 25615 exit 0> worker=0
+I, [2016-03-20T16:11:11.276213 #25612]  INFO -- : reaped #<Process::Status: pid 25617 exit 0> worker=1
+I, [2016-03-20T16:11:11.276360 #25612]  INFO -- : master complete
+I, [2016-03-20T16:11:14.720751 #25730]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T16:11:14.720933 #25730]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T16:11:14.721021 #25730]  INFO -- : worker=0 spawning...
+I, [2016-03-20T16:11:14.722035 #25730]  INFO -- : worker=1 spawning...
+I, [2016-03-20T16:11:14.722518 #25730]  INFO -- : master process ready
+I, [2016-03-20T16:11:14.723292 #25733]  INFO -- : worker=0 spawned pid=25733
+I, [2016-03-20T16:11:14.723479 #25733]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:11:14.728449 #25735]  INFO -- : worker=1 spawned pid=25735
+I, [2016-03-20T16:11:14.728611 #25735]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:11:15.051370 #25733]  INFO -- : worker=0 ready
+I, [2016-03-20T16:11:15.081531 #25735]  INFO -- : worker=1 ready
+61.46.224.158 - - [20/Mar/2016:16:11:15 +0900] "GET /config HTTP/1.0" 200 3361 0.0383
+61.46.224.158 - - [20/Mar/2016:16:11:16 +0900] "GET /style.css HTTP/1.0" 304 - 0.0041
+61.46.224.158 - - [20/Mar/2016:16:11:16 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:11:16 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0285
+61.46.224.158 - - [20/Mar/2016:16:11:16 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:16:11:16 +0900] "GET /material.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:11:16 +0900] "GET /script.js HTTP/1.0" 200 2918 0.0015
+61.46.224.158 - - [20/Mar/2016:16:11:16 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:11:16 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0034
+61.46.224.158 - - [20/Mar/2016:16:11:16 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0025
+61.46.224.158 - - [20/Mar/2016:16:11:19 +0900] "POST /sys HTTP/1.0" 404 504 0.0036
+208.100.26.230 - - [20/Mar/2016:16:11:33 +0900] "GET / HTTP/1.0" 200 6187 0.0088
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /config HTTP/1.0" 200 3361 0.0036
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /style.css HTTP/1.0" 304 - 0.0029
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0037
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /material.js HTTP/1.0" 304 - 0.0017
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0018
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /script.js HTTP/1.0" 200 2625 0.0014
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0021
+61.46.224.158 - - [20/Mar/2016:16:12:09 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:16:12:13 +0900] "POST /sys HTTP/1.0" 404 504 0.0035
+208.100.26.230 - - [20/Mar/2016:16:13:10 +0900] "HEAD / HTTP/1.0" 200 6187 0.0040
+I, [2016-03-20T16:13:21.104026 #25730]  INFO -- : reaped #<Process::Status: pid 25733 exit 0> worker=0
+I, [2016-03-20T16:13:21.104127 #25730]  INFO -- : reaped #<Process::Status: pid 25735 exit 0> worker=1
+I, [2016-03-20T16:13:21.104206 #25730]  INFO -- : master complete
+I, [2016-03-20T16:13:24.031010 #25808]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T16:13:24.031238 #25808]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T16:13:24.031371 #25808]  INFO -- : worker=0 spawning...
+I, [2016-03-20T16:13:24.031883 #25808]  INFO -- : worker=1 spawning...
+I, [2016-03-20T16:13:24.032338 #25808]  INFO -- : master process ready
+I, [2016-03-20T16:13:24.033000 #25811]  INFO -- : worker=0 spawned pid=25811
+I, [2016-03-20T16:13:24.033149 #25811]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:13:24.039625 #25813]  INFO -- : worker=1 spawned pid=25813
+I, [2016-03-20T16:13:24.039794 #25813]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:13:24.367701 #25813]  INFO -- : worker=1 ready
+I, [2016-03-20T16:13:24.367699 #25811]  INFO -- : worker=0 ready
+61.46.224.158 - - [20/Mar/2016:16:13:26 +0900] "GET /config HTTP/1.0" 200 3361 0.0329
+61.46.224.158 - - [20/Mar/2016:16:13:27 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0231
+61.46.224.158 - - [20/Mar/2016:16:13:27 +0900] "GET /style.css HTTP/1.0" 304 - 0.0018
+61.46.224.158 - - [20/Mar/2016:16:13:27 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0020
+61.46.224.158 - - [20/Mar/2016:16:13:27 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0016
+61.46.224.158 - - [20/Mar/2016:16:13:27 +0900] "GET /material.js HTTP/1.0" 304 - 0.0017
+61.46.224.158 - - [20/Mar/2016:16:13:27 +0900] "GET /script.js HTTP/1.0" 200 2919 0.0011
+61.46.224.158 - - [20/Mar/2016:16:13:27 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:13:27 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:13:27 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0017
+61.46.224.158 - - [20/Mar/2016:16:13:35 +0900] "POST /sys HTTP/1.0" 302 - 0.0044
+61.46.224.158 - - [20/Mar/2016:16:13:35 +0900] "GET /config/ HTTP/1.0" 404 512 0.0037
+I, [2016-03-20T16:16:08.849976 #25808]  INFO -- : reaped #<Process::Status: pid 25811 exit 0> worker=0
+I, [2016-03-20T16:16:08.850082 #25808]  INFO -- : reaped #<Process::Status: pid 25813 exit 0> worker=1
+I, [2016-03-20T16:16:08.850168 #25808]  INFO -- : master complete
+I, [2016-03-20T16:16:11.714120 #25901]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-20T16:16:11.714338 #25901]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-20T16:16:11.714447 #25901]  INFO -- : worker=0 spawning...
+I, [2016-03-20T16:16:11.714854 #25901]  INFO -- : worker=1 spawning...
+I, [2016-03-20T16:16:11.715225 #25901]  INFO -- : master process ready
+I, [2016-03-20T16:16:11.715734 #25904]  INFO -- : worker=0 spawned pid=25904
+I, [2016-03-20T16:16:11.715860 #25904]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:16:11.721866 #25906]  INFO -- : worker=1 spawned pid=25906
+I, [2016-03-20T16:16:11.722021 #25906]  INFO -- : Refreshing Gem list
+I, [2016-03-20T16:16:12.049993 #25906]  INFO -- : worker=1 ready
+I, [2016-03-20T16:16:12.052740 #25904]  INFO -- : worker=0 ready
+61.46.224.158 - - [20/Mar/2016:16:16:12 +0900] "GET /config HTTP/1.0" 200 3315 0.0341
+61.46.224.158 - - [20/Mar/2016:16:16:13 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:16:13 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:16:16:13 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0006
+61.46.224.158 - - [20/Mar/2016:16:16:13 +0900] "GET /material.js HTTP/1.0" 304 - 0.0014
+61.46.224.158 - - [20/Mar/2016:16:16:13 +0900] "GET /script.js HTTP/1.0" 200 2625 0.0014
+61.46.224.158 - - [20/Mar/2016:16:16:13 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0344
+61.46.224.158 - - [20/Mar/2016:16:16:13 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:16:13 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:16:13 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0010
+61.46.224.158 - - [20/Mar/2016:16:16:16 +0900] "GET / HTTP/1.0" 200 6187 0.0054
+61.46.224.158 - - [20/Mar/2016:16:16:18 +0900] "GET /config HTTP/1.0" 200 3315 0.0034
+61.46.224.158 - - [20/Mar/2016:16:16:24 +0900] "GET /config HTTP/1.0" 200 3315 0.0117
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /config HTTP/1.0" 200 3315 0.0034
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /style.css HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0013
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /script.js HTTP/1.0" 200 2648 0.0012
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:16:55 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:16:58 +0900] "GET /config HTTP/1.0" 200 3315 0.0036
+61.46.224.158 - - [20/Mar/2016:16:16:58 +0900] "GET /script.js HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:17:24 +0900] "GET /config HTTP/1.0" 200 3315 0.0051
+61.46.224.158 - - [20/Mar/2016:16:17:24 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:17:24 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:17:24 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:17:24 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:17:24 +0900] "GET /material.js HTTP/1.0" 304 - 0.0009
+61.46.224.158 - - [20/Mar/2016:16:17:24 +0900] "GET /script.js HTTP/1.0" 200 2670 0.0009
+61.46.224.158 - - [20/Mar/2016:16:17:24 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0008
+61.46.224.158 - - [20/Mar/2016:16:17:25 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0011
+61.46.224.158 - - [20/Mar/2016:16:17:25 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0012
+61.46.224.158 - - [20/Mar/2016:16:17:27 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6101 0.0059
+61.46.224.158 - - [20/Mar/2016:16:17:27 +0900] "GET /script.js HTTP/1.0" 304 - 0.0009

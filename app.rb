@@ -88,6 +88,7 @@ class NoticeWeb < Sinatra::Base
 	end
 
 	post '/sys' do
+		puts params[:email]
 		#if params[:email].nil? then
 		#	redirect "/config"
 		#else
