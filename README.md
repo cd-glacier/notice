@@ -1,9 +1,7 @@
 #webサイト通知サービス
-なんか死んでる
+生き返る?
 
- > http://glacier.space/notice 
-
-domainは変える予定
+ > http://noticeweb.net
 
 ### 参考になったサイトたち（自分用）
 

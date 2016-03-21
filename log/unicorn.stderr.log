@@ -1,0 +1,11 @@
+I, [2016-03-21T12:22:44.622316 #2815]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-21T12:22:44.622491 #2815]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-21T12:22:44.622593 #2815]  INFO -- : worker=0 spawning...
+I, [2016-03-21T12:22:44.622952 #2815]  INFO -- : worker=1 spawning...
+I, [2016-03-21T12:22:44.623276 #2818]  INFO -- : worker=0 spawned pid=2818
+I, [2016-03-21T12:22:44.623371 #2818]  INFO -- : Refreshing Gem list
+I, [2016-03-21T12:22:44.626711 #2815]  INFO -- : master process ready
+I, [2016-03-21T12:22:44.632845 #2821]  INFO -- : worker=1 spawned pid=2821
+I, [2016-03-21T12:22:44.632966 #2821]  INFO -- : Refreshing Gem list
+I, [2016-03-21T12:22:44.986857 #2818]  INFO -- : worker=0 ready
+I, [2016-03-21T12:22:44.991727 #2821]  INFO -- : worker=1 ready
