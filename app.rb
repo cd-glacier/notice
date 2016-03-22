@@ -76,7 +76,7 @@ class NoticeWeb < Sinatra::Base
 
 	post '/notice' do
 		url = add_https(params[:url])
-		mail = check_mail(prams[:email])
+		mail = check_mail(params[:email])
 
 		insert_url(url, params[:keyword], mail)
 
@@ -125,7 +125,7 @@ class NoticeWeb < Sinatra::Base
 			end	
 		end
 
-		redirect "/config/" + params[:email]
+		redirect "/config/" + check_mail(params[:email])
 	end
 
 end

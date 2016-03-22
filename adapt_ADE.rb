@@ -19,7 +19,7 @@ end
 def connect_adapted_mysql()
 	if show_os().include?('linux') then
 		#linux
-		client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
+		client = Mysql.connect('localhost', 'glacier', nil, 'notice')
 	elsif show_os().include?('darwin') then
 		#OSX
 		client = Mysql.connect('localhost', 'root', nil, 'notice')
