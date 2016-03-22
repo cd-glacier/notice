@@ -16,3 +16,7 @@ gem "rack"
 
 gem "clockwork"
 gem 'daemons', '~> 1.2', '>= 1.2.3'
+
+gem "validates_email_format_of"
+
+

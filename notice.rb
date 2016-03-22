@@ -5,8 +5,8 @@ path = show_adapted_path()
 require path + 'pass.rb'
 require 'nokogiri'
 require 'open-uri'
-
 require 'mail'
+require 'validates_email_format_of'
 require 'mysql'
 
 #########################################################################################
@@ -34,6 +34,18 @@ def gmail(to_adress, from_adress, content)
 	mail.content_transfer_encoding = "8bit"
 	mail.deliver
 
+end
+
+def check_mail(mail)
+	if mail.include?('@') then
+		if ValidatesEmailFormatOf.validate_email_format(mail).nil? then
+			return mail
+		else
+			raise ArgmentError, "this is not enable mail adress"
+		end
+	else
+		raise ArgmentError, "this is not enable mail adress"
+	end
 end
 
 def insert_url(url, word, adress)

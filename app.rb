@@ -46,12 +46,11 @@ class NoticeWeb < Sinatra::Base
 	get '/config' do
 		erb :config_start
 	end
-		
+
 	get '/config/:email' do
 		client = connect_adapted_mysql()
 
-	#escapeやれ
-		@adress = params[:email]
+		@adress = check_mail(params[:email])
 		@id = []
 		@s_url = []
 		@url = []
@@ -77,8 +76,9 @@ class NoticeWeb < Sinatra::Base
 
 	post '/notice' do
 		url = add_https(params[:url])
+		mail = check_mail(prams[:email])
 
-		insert_url(url, params[:keyword], params[:email])
+		insert_url(url, params[:keyword], mail)
 
 		redirect "/notice"
 	end
