@@ -27,7 +27,7 @@ def gmail(to_adress, from_adress, content)
 		from from_adress
 		to to_adress
 		subject "notice web"
-		body content = "from:" + from_adress + "\n" + content
+		body content = "from:" + from_adress + "\n\n" + content
 	end
 
 	mail.charset = "UTF-8"
@@ -37,27 +37,38 @@ def gmail(to_adress, from_adress, content)
 end
 
 def insert_url(url, word, adress)
+	@client = connect_adapted_mysql()
 	stmt = @client.prepare("insert into sites(keyword, url, email, noticed) values(?, ?, ?, false)")
 	stmt.execute word, url, adress
 end
 
 def delete_url(id)
+	@client = connect_adapted_mysql()
 	stmt = @client.prepare("delete from sites where id = ?")
 	stmt.execute id
 end
 
 def update_word(url, next_word, adress)
+	@client = connect_adapted_mysql()
 	stmt = @client.prepare("update notice set keyword = ? where email = ? and url = ?")
 	stmt.execute next_word, adress, url
 end
 
 def set_noticed_1(id)
+	@client = connect_adapted_mysql()
 	stmt = @client.prepare("update sites set noticed = 1 where id = ?")
 	stmt.execute id
 end
 
 def set_noticed_0(id)
+	@client = connect_adapted_mysql()
 	stmt = @client.prepare("update sites set noticed = 0 where id = ?")
+	stmt.execute id
+end
+
+def set_noticed_e(id)
+	@client = connect_adapted_mysql()
+	stmt = @client.prepare("update sites set noticed = -1 where id = ?")
 	stmt.execute id
 end
 
@@ -89,10 +100,10 @@ def remove_https(url)
 	return url
 end
 
-def notice(url, search_word, adress)
+def notice(id, url, search_word, adress)
 	html_charset =  show_charset(url)
 	puts html_charset[:charset]
-	stop_url = "http://glacier.space/config/" + adress
+	stop_url = "http://noticeweb.net/config/" + adress
 
 	#doc = Nokogiri::HTML.parse(open(url, "r:Shift_JIS").read)
 	doc = Nokogiri::HTML.parse(html_charset[:html], nil, html_charset[:charset])
@@ -100,13 +111,13 @@ def notice(url, search_word, adress)
 		#if node.text.include?(search_word.force_encoding(html_charset[:charset])) then
 		if node.text.include?(search_word.force_encoding("UTF-8")) then
 			puts "keyword is discovered!"
-			content = "指定したurl(" + url + ")にkeyword(" + search_word + ")が登場したようです。 \n 通知の変更、削除をしたい場合はこちら -> " + stop_url
-			gmail(adress, "hyoga0216@gmail.com", content)
+
+			content = "指定したurl(" + url + ")にkeyword(" + search_word + ")が登場したようです。 \n\n通知の変更、削除をしたい場合はこちら -> " + stop_url
+
+			gmail(adress, "notice web", content)
 			puts "send mail to " + adress
 			#noticed をtrueにする
-			client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
-			stmt = client.prepare("update sites set noticed = 1 where url = ? && keyword = ? && email = ?")
-			stmt.execute url, search_word, adress
+			set_noticed_1(id)
 			break
 		end
 	end
@@ -121,5 +132,4 @@ def shorten_string(arg)
 	end
 	return arg
 end
-
 

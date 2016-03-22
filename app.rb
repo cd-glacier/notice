@@ -50,6 +50,7 @@ class NoticeWeb < Sinatra::Base
 	get '/config/:email' do
 		client = connect_adapted_mysql()
 
+	#escapeやれ
 		@adress = params[:email]
 		@id = []
 		@s_url = []
@@ -57,7 +58,7 @@ class NoticeWeb < Sinatra::Base
 		@noticed = []
 		@word = []
 		@checkbox = []
-		client.query("select noticed, url, keyword, id from sites where email = '" + params[:email] + "\'").each do |noticed, url, word, id|
+		client.query("select noticed, url, keyword, id from sites where email = '" + @adress + "\'").each do |noticed, url, word, id|
 			@id << id
 			@noticed << noticed
 			@s_url << shorten_string(url)
