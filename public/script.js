@@ -24,6 +24,19 @@ $(function() {
 	});
 });
 
+$(function() {
+	$("side_link").click(function(e){
+		e.preventDefault();
+		window.location.href = "/";
+		var target = $(this).attr("href");
+		var offset = $(target).offset().top;
+		
+		$("body, html").animate({
+			scrollTop: offset - 160 
+		}, 1000);                     
+	});
+});
+
 $(function(){
 	$('#notice_button').click(function(e){
 		e.preventDefault();
@@ -68,6 +81,15 @@ $(function(){
 });
 
 ////////config//////////
+
+$(function(){
+	$('.url').click(function(e){
+		e.preventDefault();
+  	var url = $(this).attr("href");
+		window.open(url);
+	});
+});
+
 
 //汚いので変えたい、でもめんどい
 $(function(){
