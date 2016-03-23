@@ -2,17 +2,10 @@ require "./adapt_ADE.rb"
 require "./notice.rb"
 @client = connect_adapted_mysql()
 
-s = "https://hoge.com"
+s = "https://ja.wix.com/support/html5/article/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E5%90%AB%E3%82%80url%E3%82%92%E3%83%AA%E3%83%B3%E3%82%AF%E5%85%88%E3%81%AB%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95"
 adress = "hyoga0216@gmail.com"
-p = "http://www.amazon.co.jp/%E7%81%B0%E3%81%A8%E5%B9%BB%E6%83%B3%E3%81%AE%E3%82%B0%E3%83%AA%E3%83%A0%E3%82%AC%E3%83%AB-level-8-%E3%81%9D%E3%81%97%E3%81%A6%E5%83%95%E3%82%89%E3%81%AF%E6%98%8E%E6%97%A5%E3%82%92%E5%BE%85%E3%81%A4-%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%A9%E3%83%83%E3%83%97%E6%96%87%E5%BA%AB-%E5%8D%81%E6%96%87%E5%AD%97%E9%9D%92/dp/4865541144/ref=asap_bc?ie=UTF8"
+p = "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%90%8D"
 
-
-puts check_mail(adress)
-
-
-
-
-
-
+notice(10, p, "net", adress)
 
 

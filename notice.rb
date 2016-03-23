@@ -7,6 +7,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'mail'
 require 'validates_email_format_of'
+require 'net/http'
 require 'mysql'
 
 #########################################################################################
@@ -41,11 +42,20 @@ def check_mail(mail)
 		if ValidatesEmailFormatOf.validate_email_format(mail).nil? then
 			return mail
 		else
-			raise ArgmentError, "this is not enable mail adress"
+			raise ArgmentError, "this is not mail adress"
 		end
 	else
-		raise ArgmentError, "this is not enable mail adress"
+		raise ArgmentError, "this is not mail adress"
 	end
+end
+
+def check_url(uri)
+	begin
+		uri = URI.parse(uri)
+	rescue URI::InvalidURIError
+		return false
+	end
+	return uri.scheme == 'http'
 end
 
 def insert_url(url, word, adress)
@@ -95,9 +105,9 @@ def show_charset(url)
 	return html_charset
 end
 
-def add_https(url)
+def add_http(url)
 	unless url.include?("http") then
-		url = "https://" + url
+		url = "http://" + url
 	end
 	return url
 end
@@ -124,7 +134,7 @@ def notice(id, url, search_word, adress)
 		if node.text.include?(search_word.force_encoding("UTF-8")) then
 			puts "keyword is discovered!"
 
-			content = "指定したurl(" + url + ")にkeyword(" + search_word + ")が登場したようです。 \n\n通知の変更、削除をしたい場合はこちら -> " + stop_url
+			content = "指定したurl( " + url + " )にkeyword( " + search_word + " )が登場したようです。 \n\n通知の変更、削除をしたい場合はこちら -> " + stop_url
 
 			gmail(adress, "notice web", content)
 			puts "send mail to " + adress

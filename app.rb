@@ -75,7 +75,11 @@ class NoticeWeb < Sinatra::Base
 	end
 
 	post '/notice' do
-		url = add_https(params[:url])
+		#httpがあるか確認
+		url = add_http(params[:url])
+		#urlがuft-8じゃない場合utf-8に変更する
+		url = url.encode('UTF-8')
+		#本当にメールアドレスかどうか
 		mail = check_mail(params[:email])
 
 		insert_url(url, params[:keyword], mail)
