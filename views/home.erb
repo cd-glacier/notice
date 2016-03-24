@@ -59,45 +59,51 @@
 			</div>
 			<div id="hoge">
 				<span>&nbsp;<span>
-					</div>
-					<div class="second">
-						<div class="img_div">
-							<img src="./images/2.png" width="250" alt="2" id="img_2">
-						</div>
-						<div class="second_sentence">
-							<p class="para">
-							あとは待つだけです。
-							<br>指定したURLのページであなたの用意したキーワードが登場した時に、あなたのメールアドレスに通知が来るでしょう。
-							<br>キーワードが数字のように連番の時は自動で次回も通知することが可能です。(予定です、まだ未実装)
-							</p>
-						</div>
-					</div>
+			</div>
+			<div class="second">
+				<div class="img_div">
+					<img src="./images/2.png" width="250" alt="2" id="img_2">
 				</div>
+				<div class="second_sentence">
+					<p class="para">
+						あとは待つだけです。
+						<br>指定したURLのページであなたの用意したキーワードが登場した時に、あなたのメールアドレスに通知が来るでしょう。
+						<br>キーワードが数字のように連番の時は自動で次回も通知することが可能です。(予定です、まだ未実装)
+					</p>
+				</div>
+			</div>
+		</div>
 
-				<div id="contact">
-					<div class="contents">
-						<h2 class="subtitle">contact</h2>
+		<div id="contact">
+			<div class="contents">
+				<h2 class="subtitle">contact</h2>
+
+				<div class="row">
+					<form class="col s12">
+						<div class="input-field col s12">
+							<input id="contact_email" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
 
 						<div class="row">
-							<form class="col s12">
+							<div class="row">
 								<div class="input-field col s12">
-									<input id="contact_email" type="email" class="validate">
-									<label for="email">Email</label>
+									<textarea id="message" class="materialize-textarea"></textarea>
+									<label for="message">Message</label>
 								</div>
-
-								<div class="row">
-									<div class="row">
-										<div class="input-field col s12">
-											<textarea id="message" class="materialize-textarea"></textarea>
-											<label for="message">Message</label>
-										</div>
-									</div>
-								</div>
-								<a id="contact_button" type="submit" class="waves-effect waves-light btn-large">submit!</a>
-							</form>
+							</div>
 						</div>
-					</div>
+						<a id="contact_button" type="submit" class="waves-effect waves-light btn-large">submit!</a>
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+	<div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar">
+		<div class="mdl-snackbar__text"></div>
+		<button type="button" class="mdl-snackbar__action"></button>
+	</div>
+
+</div>

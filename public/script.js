@@ -2,6 +2,8 @@ $(function() {
 	$(".button-collapse").sideNav();
 });
 
+////home////
+
 $(function() {
 	$(window).on('scroll', function() {
 		if ($(document).scrollTop() > 135) {
@@ -55,7 +57,18 @@ $(function(){
 				email: js_email
 			},
 			success: function(json){
-				alert("正常に操作が完了しました。");
+				//alert("正常に操作が完了しました。");
+
+				var notification = document.querySelector('.mdl-js-snackbar');
+				var data = {
+					message: '正常に操作が完了しました。',
+					actionHandler: function(event) {},
+					//actionText: 'Undo',
+					actionText: 'OK',
+					timeout: 10000
+				};
+				notification.MaterialSnackbar.showSnackbar(data);
+
 			}
 		});
 	});
@@ -74,13 +87,23 @@ $(function(){
 				message: js_message
 			},
 			success: function(json){
-				alert("製作者にメッセージを送信しました。");
+				//alert("製作者にメッセージを送信しました。");
+
+				var notification = document.querySelector('.mdl-js-snackbar');
+				var data = {
+					message: '製作者にメッセージを送信しました。',
+					actionHandler: function(event) {},
+					actionText: 'OK',
+					timeout: 10000
+				};
+				notification.MaterialSnackbar.showSnackbar(data);
+
 			}
 		});
 	});
 });
 
-////////config//////////
+////config/////
 
 $(function(){
 	$('.url').click(function(e){
@@ -133,7 +156,7 @@ $(function(){
 	});
 });
 
-////////config_start//////////
+////config_start////
 $(function(){
 	$('#sys_button').click(function(e){
 		e.preventDefault();

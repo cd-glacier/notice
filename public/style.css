@@ -5,6 +5,8 @@ body {
 	height: 100%;
 }
 
+/*home*/
+
 .header_top {
 	background-color: #E08170;
 	height: 185;
@@ -131,6 +133,9 @@ p {
 	color: #5E5D5D;
 }
 
+.mdl-snackbar {
+	left: 80%;
+}
 
 /*config_start.erb*/
 
@@ -177,6 +182,10 @@ p {
 		font-size: 15;
 	}
 
+	.mdl-snackbar {
+		width: 300;
+		left: 50%;
+	}
 
 }
 
