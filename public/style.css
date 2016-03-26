@@ -4,9 +4,7 @@ body {
 	margin: 0;
 	height: 100%;
 }
-
-/*home*/
-
+ 
 .header_top {
 	background-color: #E08170;
 	height: 185;
@@ -45,8 +43,6 @@ body {
 	text-decoration: none;
 }
 
-
-
 ul {
 	padding: 0;
 	margin: 0 auto;
@@ -63,6 +59,14 @@ li {
 	width: 100%;
 }
 
+.progress {
+	visibility: hidden;
+	margin: 0;
+	position: fixed;
+} 
+
+
+/*home*/
 
 #notice, #about, #contact {
 	width: 100%;

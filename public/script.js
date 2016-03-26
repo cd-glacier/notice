@@ -42,6 +42,10 @@ $(function() {
 $(function(){
 	$('#notice_button').click(function(e){
 		e.preventDefault();
+
+    //preloader 
+		$(".progress").css("visibility", "visible");
+
 		var js_keyword = $(":text[id='keyword']").val();
 		var js_url = $("#url").val();
 		var js_email = $("#email").val();
@@ -65,10 +69,27 @@ $(function(){
 					actionHandler: function(event) {},
 					//actionText: 'Undo',
 					actionText: 'OK',
-					timeout: 10000
-				};
+					timeout: 2000
+				};          
 				notification.MaterialSnackbar.showSnackbar(data);
 
+				//preloader 
+				$(".progress").css("visibility", "hidden");
+
+			},
+			error: function(){
+		 		var notification = document.querySelector('.mdl-js-snackbar');
+				var data = {
+					message: '調子が悪いようです... \n 時間をおいてお試し下さい。',
+					actionHandler: function(event) {},
+					//actionText: 'Undo',
+					actionText: 'OK',
+					timeout: 2000
+				};          
+				notification.MaterialSnackbar.showSnackbar(data); 
+
+				//preloader 
+				$(".progress").css("visibility", "hidden");
 			}
 		});
 	});
@@ -77,6 +98,10 @@ $(function(){
 $(function(){
 	$('#contact_button').click(function(e){
 		e.preventDefault();
+
+    //preloader 
+		$(".progress").css("visibility", "visible");
+
 		var js_contact_email = $("#contact_email").val();
 		var js_message = $("#message").val();
 		$.ajax({
@@ -94,11 +119,28 @@ $(function(){
 					message: '製作者にメッセージを送信しました。',
 					actionHandler: function(event) {},
 					actionText: 'OK',
-					timeout: 10000
+					timeout: 2000
 				};
 				notification.MaterialSnackbar.showSnackbar(data);
 
-			}
+				//preloader 
+				$(".progress").css("visibility", "hidden");
+
+			},
+ 			error: function(){
+		 		var notification = document.querySelector('.mdl-js-snackbar');
+				var data = {
+					message: '調子が悪いようです... \n 時間をおいてお試し下さい。',
+					actionHandler: function(event) {},
+					//actionText: 'Undo',
+					actionText: 'OK',
+					timeout: 2000
+				};          
+				notification.MaterialSnackbar.showSnackbar(data); 
+
+				//preloader 
+				$(".progress").css("visibility", "hidden");
+			} 
 		});
 	});
 });
@@ -118,6 +160,10 @@ $(function(){
 $(function(){
 	$('#update_button').click(function(e){
 		e.preventDefault();
+
+    //preloader 
+		$(".progress").css("visibility", "visible");
+
 		var js_notice_box = [];
 		var js_notice_box_id = [];
 		var js_delete_box = [];
@@ -150,7 +196,35 @@ $(function(){
 				notice_box_id: js_notice_box_id
 			},
 			success: function(json){
-				alert("正常に操作が完了しました。");
+				//alert("正常に操作が完了しました。");
+
+        var notification = document.querySelector('.mdl-js-snackbar');
+				var data = {
+					message: '正常に操作が完了しました。',
+					actionHandler: function(event) {},
+					//actionText: 'Undo',
+					actionText: 'OK',
+					timeout: 2000                         
+
+				};          
+				notification.MaterialSnackbar.showSnackbar(data);
+
+				//preloader 
+				$(".progress").css("visibility", "hidden");
+			},
+			error: function(){
+		 		var notification = document.querySelector('.mdl-js-snackbar');
+				var data = {
+					message: '調子が悪いようです... \n 時間をおいてお試し下さい。',
+					actionHandler: function(event) {},
+					//actionText: 'Undo',
+					actionText: 'OK',
+					timeout: 2000
+				};          
+				notification.MaterialSnackbar.showSnackbar(data);  
+
+				//preloader 
+				$(".progress").css("visibility", "hidden");
 			}
 		});
 	});

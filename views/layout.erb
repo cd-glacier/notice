@@ -3,15 +3,15 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>notice web</title>
-<link rel="stylesheet" type="text/css" href="/materialize/css/materialize.css">
 <link rel="stylesheet" type="text/css" href="/material.css">
-<link rel="stylesheet" type="text/css" href="/style.css">
+<link rel="stylesheet" type="text/css" href="/materialize/css/materialize.css">
 <script type="text/javascript" src="/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="/materialize/js/materialize.js"></script>
 <script type="text/javascript" src="/material.js"></script>
-<script type="text/javascript" src="/script.js"></script>
+<script type="text/javascript" src="/materialize/js/materialize.js"></script>
 <script type="text/javascript" src="/footerFixed.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/style.css">
+<script type="text/javascript" src="/script.js"></script>
 </head>
 <body>
 
@@ -33,7 +33,13 @@
 			</ul>
 		</div>
 	</nav>
+
+	<div class="progress">
+		<div class="indeterminate"></div>
+	</div>
+
 </div>
+ 
 
 <%= yield %>
 
@@ -43,7 +49,7 @@
 			<div class="row">
 				<div class="col l6 s12">
 					<h5 class="white-text">Content</h5>
-					<p class="grey-text text-lighten-4" style="font-size: 15">
+					<p style="font-size: 15; color: white">
 					このサービスは一人の学生が趣味によって運用しております。
 					<br>ご不明な点などがありましたら、contactより製作者に連絡してくださるとありがたいです。
 					</p>
@@ -64,6 +70,11 @@
 			</div>
 		</div>
 	</footer>
+</div>
+
+<div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar">
+	<div class="mdl-snackbar__text"></div>
+	<button type="button" class="mdl-snackbar__action"></button>
 </div>
 
 </body>	
