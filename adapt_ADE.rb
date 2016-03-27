@@ -1,5 +1,3 @@
-#require "./pass.rb"
-require "/projects/notice/pass.rb"
 
 def show_os()
 	return RbConfig::CONFIG['host_os']
@@ -8,7 +6,7 @@ end
 def show_adapted_path()
 	if show_os().include?('linux') then
 		#linux
-		path = PATH
+		path = ENV['NOTICE_PATH']
 	elsif show_os().include?('darwin') then
 		#iOS
 		path = "./"

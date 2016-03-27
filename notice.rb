@@ -19,7 +19,7 @@ def gmail(to_adress, from_adress, content)
 			:port => 587,
 			:domain => 'gmail.com',
 			:user_name => 'hyoga0216@gmail.com',
-			:password => PASS,
+			:password => ENV['GMAIL_PASS'],
 			:authentication => 'plain',
 			:enable_starttls_auto => true
 		}
