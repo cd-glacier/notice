@@ -126,6 +126,10 @@ p {
 	background-color:  #E08170;
 }
 
+.adsense {
+	text-align: center;
+}
+
 /*config.erb*/
 
 #config-wrapper {
