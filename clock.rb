@@ -9,19 +9,21 @@ require 'mysql'
 
 include Clockwork
 
-every(30.minutes, 'work')  do
+@sites_table = "sites2"
+
+every(10.minutes, 'work')  do
 	#urlとsearch_word, mail adressをmysqlからとってくる
 	#client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
 	@client = connect_adapted_mysql()
 
-	@client.query("select id, noticed, url, keyword, email from sites").each do |id, noticed, url, word, mail_adress|
+	@client.query("select id, noticed, url, keyword, email, num from " + @sites_table).each do |id, noticed, url, word, mail_adress, num|
 		if noticed[0].to_i == 0 then
 			puts "seeking in " + url, word, mail_adress
 			begin
 				#通知
-				notice(id, url, word, mail_adress)
+				notice(id, url, word, mail_adress, num)
 			rescue => e
-				set_noticed_e(id)
+				set_noticed_e(id, @sites_table)
 				puts e.message
 =begin
 				content = "エラーが発生したっぽい \n\n" + e.message

@@ -58,40 +58,46 @@ def check_url(uri)
 	return uri.scheme == 'http'
 end
 
-def insert_url(url, word, adress)
+def insert_url(url, word, adress, table)
 	@client = connect_adapted_mysql()
-	stmt = @client.prepare("insert into sites(keyword, url, email, noticed) values(?, ?, ?, false)")
+	stmt = @client.prepare("insert into " + table + "(keyword, url, email, noticed) values(?, ?, ?, false)")
 	stmt.execute word, url, adress
 end
 
-def delete_url(id)
+def delete_url(id, table)
 	@client = connect_adapted_mysql()
-	stmt = @client.prepare("delete from sites where id = ?")
+	stmt = @client.prepare("delete from " + table + " where id = ?")
 	stmt.execute id
 end
 
-def update_word(url, next_word, adress)
+def update_word(url, next_word, adress, table)
 	@client = connect_adapted_mysql()
-	stmt = @client.prepare("update notice set keyword = ? where email = ? and url = ?")
+	stmt = @client.prepare("update " + table + " set keyword = ? where email = ? and url = ?")
 	stmt.execute next_word, adress, url
 end
 
-def set_noticed_1(id)
+def set_noticed_1(id, table)
 	@client = connect_adapted_mysql()
-	stmt = @client.prepare("update sites set noticed = 1 where id = ?")
+	stmt = @client.prepare("update " + table + " set noticed = 1 where id = ?")
 	stmt.execute id
 end
 
-def set_noticed_0(id)
+def set_noticed_0(id, table)
 	@client = connect_adapted_mysql()
-	stmt = @client.prepare("update sites set noticed = 0 where id = ?")
+	stmt = @client.prepare("update " + table + " set noticed = 0 where id = ?")
 	stmt.execute id
 end
 
-def set_noticed_e(id)
+def set_noticed_e(id, table)
 	@client = connect_adapted_mysql()
-	stmt = @client.prepare("update sites set noticed = -1 where id = ?")
+	stmt = @client.prepare("update " + table + " set noticed = -1 where id = ?")
 	stmt.execute id
+end
+
+def set_num(id, num, table)
+	@client = connect_adapted_mysql()
+	stmt = @client.prepare("update " + table + " set num  = ? where id = ?")
+	stmt.execute num, id
 end
 
 def show_charset(url)
@@ -122,27 +128,35 @@ def remove_https(url)
 	return url
 end
 
-def notice(id, url, search_word, adress)
+def notice(id, url, search_word, adress, before_num)
 	html_charset =  show_charset(url)
 	puts html_charset[:charset]
 	stop_url = "http://noticeweb.net/config/" + adress
+	sites_table = "sites2"
+	num = 0
+  
+	if before_num.nil? then
+		before_num = 0
+	end
 
 	#doc = Nokogiri::HTML.parse(open(url, "r:Shift_JIS").read)
 	doc = Nokogiri::HTML.parse(html_charset[:html], nil, html_charset[:charset])
-	doc.css('a, p, h1, h2, h3, span, svg, div').each do |node|
+	doc.css('a, p, h1, h2, h3, span, svg, div, img>alt').each do |node|
 		#if node.text.include?(search_word.force_encoding(html_charset[:charset])) then
 		if node.text.include?(search_word.force_encoding("UTF-8")) then
 			puts "keyword is discovered!"
-
-			content = "指定したurl( " + url + " )にkeyword( " + search_word + " )が登場したようです。 \n\n通知の変更、削除をしたい場合はこちら -> " + stop_url
-
-			gmail(adress, "notice web", content)
-			puts "send mail to " + adress
-			#noticed をtrueにする
-			set_noticed_1(id)
-			break
+			num = num + 1;
 		end
 	end
+
+	if num > before_num then
+		content = url + "に" + search_word + " が登場したようです。 \n\n通知のOnOff、削除をしたい場合はこちら -> " + stop_url
+		gmail(adress, "notice web", content)
+		set_num(id, num, sites_table)
+		puts "send mail to " + adress
+		#noticed をtrueにする
+		set_noticed_1(id, sites_table)
+	end 
 end
 
 def shorten_string(arg)

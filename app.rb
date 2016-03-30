@@ -21,9 +21,8 @@ class NoticeWeb < Sinatra::Base
 	before do
 		#mysql
 		@client = connect_adapted_mysql()
-		#@client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
-		#@client = Mysql.connect('localhost', 'root', nil, 'notice')
-		stmt = @client.query('create table if not exists sites (
+=begin
+		stmt = @client.query('create table if not exists sites (                                                                       
 													id int not null auto_increment,
 													keyword varchar(255) not null,
 													url varchar(255) not null,
@@ -31,7 +30,30 @@ class NoticeWeb < Sinatra::Base
 													noticed bool not null,
 													primary key(id)
 													)')
+=end
+
+ 		stmt = @client.query('create table if not exists sites2 (
+													id int not null auto_increment,
+													keyword varchar(255) not null,
+													url varchar(255) not null,
+													num int,
+													email varchar(255) not null,
+													noticed bool not null,
+													title varchar(255),
+													user_id varchar(255),
+													primary key(id)
+													)') 
+     
+		stmt = @client.query('create table if not exists users (
+													id int not null auto_increment,
+													email varchar(255),
+													primary key(id)
+													)') 
+     
 	end
+
+  sites_table = "sites2"
+  user_table = "users"
 
 #########################################################################################
 
@@ -57,7 +79,7 @@ class NoticeWeb < Sinatra::Base
 		@noticed = []
 		@word = []
 		@checkbox = []
-		client.query("select noticed, url, keyword, id from sites where email = '" + @adress + "\'").each do |noticed, url, word, id|
+		client.query("select noticed, url, keyword, id from " + sites_table + " where email = '" + @adress + "\'").each do |noticed, url, word, id|
 			@id << id
 			@noticed << noticed
 			@s_url << shorten_string(url)
@@ -82,7 +104,7 @@ class NoticeWeb < Sinatra::Base
 		#本当にメールアドレスかどうか
 		mail = check_mail(params[:email])
 
-		insert_url(url, params[:keyword], mail)
+		insert_url(url, params[:keyword], mail, "sites2")
 
 		redirect "/notice"
 	end
@@ -101,29 +123,21 @@ class NoticeWeb < Sinatra::Base
 		#end
 	end
 
-=begin
-	delete  "/config/:email/:url/:keyword" do
-		delete_url(params[:url], params[:keyword], params[:email])	
-
-		redirect "/notice"
-	end
-=end
-
 	post '/config' do
 		#postでdeleteってどうなんや？？
 		#delete
 		unless params[:delete_box].nil? then
 			params[:delete_box].each do |id|
-				delete_url(id)
+				delete_url(id, sites_table)
 			end
 		end
 
 		#update
 		params[:notice_box].length.times do |i|
 			if params[:notice_box][i].to_i == 0 then
-				set_noticed_0(params[:notice_box_id][i].to_i)
+				set_noticed_0(params[:notice_box_id][i].to_i, sites_table)
 			elsif params[:notice_box][i].to_i == 1 then
-				set_noticed_1(params[:notice_box_id][i].to_i)
+				set_noticed_1(params[:notice_box_id][i].to_i, sites_table)
 			else
 				puts "update error"
 			end	

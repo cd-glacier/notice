@@ -1,1 +1,748 @@
 
+I, [2016-03-30T17:45:15.711947 #20909]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-30T17:45:15.712192 #20909]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-30T17:45:15.712304 #20909]  INFO -- : worker=0 spawning...
+I, [2016-03-30T17:45:15.712677 #20909]  INFO -- : worker=1 spawning...
+I, [2016-03-30T17:45:15.713063 #20909]  INFO -- : master process ready
+I, [2016-03-30T17:45:15.719912 #20912]  INFO -- : worker=0 spawned pid=20912
+I, [2016-03-30T17:45:15.721198 #20912]  INFO -- : Refreshing Gem list
+I, [2016-03-30T17:45:15.727433 #20914]  INFO -- : worker=1 spawned pid=20914
+I, [2016-03-30T17:45:15.727568 #20914]  INFO -- : Refreshing Gem list
+I, [2016-03-30T17:45:16.063287 #20912]  INFO -- : worker=0 ready
+I, [2016-03-30T17:45:16.067780 #20914]  INFO -- : worker=1 ready
+2016-03-30 17:45:21 - Mysql::Error - CREATE command denied to user 'glacier'@'localhost' for table 'sites2':
+	/projects/notice/app.rb:35:in `query'
+	/projects/notice/app.rb:35:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `block in filter!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `filter!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1084:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+2016-03-30 17:45:39 - Mysql::Error - CREATE command denied to user 'glacier'@'localhost' for table 'sites2':
+	/projects/notice/app.rb:35:in `query'
+	/projects/notice/app.rb:35:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `block in filter!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `filter!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1084:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+I, [2016-03-30T17:55:22.531981 #20909]  INFO -- : reaped #<Process::Status: pid 20912 exit 0> worker=0
+I, [2016-03-30T17:55:22.532192 #20909]  INFO -- : reaped #<Process::Status: pid 20914 exit 0> worker=1
+I, [2016-03-30T17:55:22.532346 #20909]  INFO -- : master complete
+I, [2016-03-30T17:55:41.497707 #20966]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-30T17:55:41.497948 #20966]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-30T17:55:41.498050 #20966]  INFO -- : worker=0 spawning...
+I, [2016-03-30T17:55:41.498352 #20966]  INFO -- : worker=1 spawning...
+I, [2016-03-30T17:55:41.498775 #20966]  INFO -- : master process ready
+I, [2016-03-30T17:55:41.506557 #20969]  INFO -- : worker=0 spawned pid=20969
+I, [2016-03-30T17:55:41.506686 #20969]  INFO -- : Refreshing Gem list
+I, [2016-03-30T17:55:41.514631 #20971]  INFO -- : worker=1 spawned pid=20971
+I, [2016-03-30T17:55:41.514778 #20971]  INFO -- : Refreshing Gem list
+I, [2016-03-30T17:55:41.878303 #20971]  INFO -- : worker=1 ready
+I, [2016-03-30T17:55:41.879043 #20969]  INFO -- : worker=0 ready
+2016-03-30 17:55:59 - Mysql::Error - CREATE command denied to user 'glacier'@'localhost' for table 'sites2':
+	/projects/notice/app.rb:35:in `query'
+	/projects/notice/app.rb:35:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `block in filter!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `filter!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1084:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+153.237.33.238 - - [30/Mar/2016:17:55:59 +0900] "GET / HTTP/1.0" 500 143786 0.0634
+2016-03-30 17:56:00 - Mysql::Error - CREATE command denied to user 'glacier'@'localhost' for table 'sites2':
+	/projects/notice/app.rb:35:in `query'
+	/projects/notice/app.rb:35:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `block in filter!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:966:in `filter!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1084:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+153.237.33.238 - - [30/Mar/2016:17:56:00 +0900] "GET /__sinatra__/500.png HTTP/1.0" 500 143815 0.0620
+I, [2016-03-30T18:02:10.804780 #20966]  INFO -- : reaped #<Process::Status: pid 20969 exit 0> worker=0
+I, [2016-03-30T18:02:10.804916 #20966]  INFO -- : reaped #<Process::Status: pid 20971 exit 0> worker=1
+I, [2016-03-30T18:02:10.805054 #20966]  INFO -- : master complete
+I, [2016-03-30T18:02:32.262513 #21019]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-30T18:02:32.262860 #21019]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-30T18:02:32.263062 #21019]  INFO -- : worker=0 spawning...
+I, [2016-03-30T18:02:32.264675 #21019]  INFO -- : worker=1 spawning...
+I, [2016-03-30T18:02:32.265275 #21019]  INFO -- : master process ready
+I, [2016-03-30T18:02:32.266041 #21022]  INFO -- : worker=0 spawned pid=21022
+I, [2016-03-30T18:02:32.266214 #21022]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:02:32.277229 #21024]  INFO -- : worker=1 spawned pid=21024
+I, [2016-03-30T18:02:32.277364 #21024]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:02:32.636466 #21024]  INFO -- : worker=1 ready
+I, [2016-03-30T18:02:32.637610 #21022]  INFO -- : worker=0 ready
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET / HTTP/1.0" 200 6924 0.0502
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /material.css HTTP/1.0" 304 - 0.0359
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0015
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /style.css HTTP/1.0" 304 - 0.0016
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /material.js HTTP/1.0" 304 - 0.0017
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0023
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /script.js HTTP/1.0" 304 - 0.0008
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0020
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:18:02:38 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:18:02:39 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:02:39 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0008
+I, [2016-03-30T18:29:17.076468 #21019]  INFO -- : reaped #<Process::Status: pid 21022 exit 0> worker=0
+I, [2016-03-30T18:29:17.076597 #21019]  INFO -- : reaped #<Process::Status: pid 21024 exit 0> worker=1
+I, [2016-03-30T18:29:17.076710 #21019]  INFO -- : master complete
+I, [2016-03-30T18:30:29.003443 #21217]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-30T18:30:29.003693 #21217]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-30T18:30:29.003834 #21217]  INFO -- : worker=0 spawning...
+I, [2016-03-30T18:30:29.004189 #21217]  INFO -- : worker=1 spawning...
+I, [2016-03-30T18:30:29.004573 #21217]  INFO -- : master process ready
+I, [2016-03-30T18:30:29.012040 #21220]  INFO -- : worker=0 spawned pid=21220
+I, [2016-03-30T18:30:29.012192 #21220]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:30:29.016435 #21222]  INFO -- : worker=1 spawned pid=21222
+I, [2016-03-30T18:30:29.016538 #21222]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:30:29.367259 #21220]  INFO -- : worker=0 ready
+I, [2016-03-30T18:30:29.372503 #21222]  INFO -- : worker=1 ready
+153.237.33.238 - - [30/Mar/2016:18:30:32 +0900] "GET / HTTP/1.0" 200 6924 0.0439
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /material.js HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0008
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /material.css HTTP/1.0" 304 - 0.0292
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /style.css HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /script.js HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:18:30:33 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:18:30:36 +0900] "GET /logo.png HTTP/1.0" 200 15699 0.0026
+2016-03-30 18:30:56 - TypeError - can't convert nil into String:
+	/projects/notice/notice.rb:63:in `+'
+	/projects/notice/notice.rb:63:in `insert_url'
+	/projects/notice/app.rb:107:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+153.237.33.238 - - [30/Mar/2016:18:30:56 +0900] "POST /notice HTTP/1.0" 500 156366 0.0621
+153.237.33.238 - - [30/Mar/2016:18:30:58 +0900] "GET /materialize/font/roboto/Roboto-Medium.woff2 HTTP/1.0" 304 - 0.0010
+I, [2016-03-30T18:35:14.377896 #21217]  INFO -- : reaped #<Process::Status: pid 21220 exit 0> worker=0
+I, [2016-03-30T18:35:14.378094 #21217]  INFO -- : reaped #<Process::Status: pid 21222 exit 0> worker=1
+I, [2016-03-30T18:35:14.378268 #21217]  INFO -- : master complete
+I, [2016-03-30T18:35:29.029239 #21264]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-30T18:35:29.029450 #21264]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-30T18:35:29.029559 #21264]  INFO -- : worker=0 spawning...
+I, [2016-03-30T18:35:29.029886 #21264]  INFO -- : worker=1 spawning...
+I, [2016-03-30T18:35:29.030246 #21264]  INFO -- : master process ready
+I, [2016-03-30T18:35:29.037462 #21267]  INFO -- : worker=0 spawned pid=21267
+I, [2016-03-30T18:35:29.037576 #21267]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:35:29.040532 #21269]  INFO -- : worker=1 spawned pid=21269
+I, [2016-03-30T18:35:29.040649 #21269]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:35:29.392458 #21267]  INFO -- : worker=0 ready
+I, [2016-03-30T18:35:29.392504 #21269]  INFO -- : worker=1 ready
+153.237.33.238 - - [30/Mar/2016:18:35:31 +0900] "GET / HTTP/1.0" 200 6924 0.0376
+153.237.33.238 - - [30/Mar/2016:18:35:31 +0900] "GET /material.css HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:35:31 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0017
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /material.js HTTP/1.0" 304 - 0.0013
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /script.js HTTP/1.0" 304 - 0.0298
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0017
+153.237.33.238 - - [30/Mar/2016:18:35:32 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0013
+2016-03-30 18:35:47 - TypeError - can't convert nil into String:
+	/projects/notice/notice.rb:63:in `+'
+	/projects/notice/notice.rb:63:in `insert_url'
+	/projects/notice/app.rb:107:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+153.237.33.238 - - [30/Mar/2016:18:35:47 +0900] "POST /notice HTTP/1.0" 500 156366 0.0737
+153.237.33.238 - - [30/Mar/2016:18:35:50 +0900] "GET /materialize/font/roboto/Roboto-Medium.woff2 HTTP/1.0" 304 - 0.0015
+I, [2016-03-30T18:38:02.798120 #21264]  INFO -- : reaped #<Process::Status: pid 21267 exit 0> worker=0
+I, [2016-03-30T18:38:02.798325 #21264]  INFO -- : reaped #<Process::Status: pid 21269 exit 0> worker=1
+I, [2016-03-30T18:38:02.798447 #21264]  INFO -- : master complete
+I, [2016-03-30T18:38:12.260148 #21284]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-30T18:38:12.260512 #21284]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-30T18:38:12.260704 #21284]  INFO -- : worker=0 spawning...
+I, [2016-03-30T18:38:12.261382 #21284]  INFO -- : worker=1 spawning...
+I, [2016-03-30T18:38:12.262149 #21287]  INFO -- : worker=0 spawned pid=21287
+I, [2016-03-30T18:38:12.262339 #21287]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:38:12.265597 #21284]  INFO -- : master process ready
+I, [2016-03-30T18:38:12.272695 #21290]  INFO -- : worker=1 spawned pid=21290
+I, [2016-03-30T18:38:12.272938 #21290]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:38:12.711208 #21290]  INFO -- : worker=1 ready
+I, [2016-03-30T18:38:12.737943 #21287]  INFO -- : worker=0 ready
+153.237.33.238 - - [30/Mar/2016:18:38:19 +0900] "GET / HTTP/1.0" 200 6924 0.0412
+153.237.33.238 - - [30/Mar/2016:18:38:19 +0900] "GET /material.css HTTP/1.0" 304 - 0.0280
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /style.css HTTP/1.0" 304 - 0.0013
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /material.js HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0023
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0008
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0008
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0026
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0019
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0021
+153.237.33.238 - - [30/Mar/2016:18:38:20 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:18:38:25 +0900] "GET / HTTP/1.0" 200 6924 0.0136
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /material.css HTTP/1.0" 304 - 0.0012
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /style.css HTTP/1.0" 304 - 0.0013
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0024
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /material.js HTTP/1.0" 304 - 0.0015
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0017
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /script.js HTTP/1.0" 304 - 0.0013
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0013
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:18:38:26 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0011
+2016-03-30 18:38:35 - NameError - uninitialized constant ArgmentError:
+	/projects/notice/notice.rb:48:in `check_mail'
+	/projects/notice/app.rb:105:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+153.237.33.238 - - [30/Mar/2016:18:38:35 +0900] "POST /notice HTTP/1.0" 500 153502 0.0775
+153.237.33.238 - - [30/Mar/2016:18:38:37 +0900] "GET /materialize/font/roboto/Roboto-Medium.woff2 HTTP/1.0" 304 - 0.0029
+153.237.33.238 - - [30/Mar/2016:18:38:44 +0900] "POST /notice HTTP/1.0" 302 - 0.0129
+153.237.33.238 - - [30/Mar/2016:18:38:44 +0900] "GET /notice HTTP/1.0" 200 6924 0.0097
+153.237.33.238 - - [30/Mar/2016:18:39:13 +0900] "GET /config HTTP/1.0" 200 4138 0.0056
+2016-03-30 18:39:18 - TypeError - can't convert nil into String:
+	/projects/notice/app.rb:82:in `+'
+	/projects/notice/app.rb:82:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+153.237.33.238 - - [30/Mar/2016:18:39:18 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 500 152193 0.0787
+153.237.33.238 - - [30/Mar/2016:18:39:18 +0900] "GET /__sinatra__/500.png HTTP/1.0" 200 24378 0.0082
+I, [2016-03-30T18:40:29.924577 #21284]  INFO -- : reaped #<Process::Status: pid 21287 exit 0> worker=0
+I, [2016-03-30T18:40:29.924831 #21284]  INFO -- : worker=0 spawning...
+I, [2016-03-30T18:40:29.925856 #21300]  INFO -- : worker=0 spawned pid=21300
+I, [2016-03-30T18:40:29.926064 #21300]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:40:30.237094 #21300]  INFO -- : worker=0 ready
+/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:21284 (or pid=/projects/notice/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/bin/unicorn:23:in `load'
+	from /usr/local/bin/unicorn:23:in `<main>'
+/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:21284 (or pid=/projects/notice/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/bin/unicorn:23:in `load'
+	from /usr/local/bin/unicorn:23:in `<main>'
+/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:21284 (or pid=/projects/notice/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/bin/unicorn:23:in `load'
+	from /usr/local/bin/unicorn:23:in `<main>'
+I, [2016-03-30T18:42:03.696428 #21284]  INFO -- : reaped #<Process::Status: pid 21290 exit 0> worker=1
+I, [2016-03-30T18:42:03.696601 #21284]  INFO -- : reaped #<Process::Status: pid 21300 exit 0> worker=0
+I, [2016-03-30T18:42:03.696806 #21284]  INFO -- : master complete
+I, [2016-03-30T18:42:32.064844 #21335]  INFO -- : unlinking existing socket=/projects/notice/tmp/sockets/unicorn.sock
+I, [2016-03-30T18:42:32.065063 #21335]  INFO -- : listening on addr=/projects/notice/tmp/sockets/unicorn.sock fd=8
+I, [2016-03-30T18:42:32.065175 #21335]  INFO -- : worker=0 spawning...
+I, [2016-03-30T18:42:32.065528 #21335]  INFO -- : worker=1 spawning...
+I, [2016-03-30T18:42:32.065870 #21335]  INFO -- : master process ready
+I, [2016-03-30T18:42:32.073374 #21338]  INFO -- : worker=0 spawned pid=21338
+I, [2016-03-30T18:42:32.073500 #21338]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:42:32.076414 #21340]  INFO -- : worker=1 spawned pid=21340
+I, [2016-03-30T18:42:32.076543 #21340]  INFO -- : Refreshing Gem list
+I, [2016-03-30T18:42:32.416422 #21340]  INFO -- : worker=1 ready
+I, [2016-03-30T18:42:32.418989 #21338]  INFO -- : worker=0 ready
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET / HTTP/1.0" 200 6924 0.0491
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET /material.css HTTP/1.0" 304 - 0.0402
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0017
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET /style.css HTTP/1.0" 304 - 0.0012
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0026
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET /material.js HTTP/1.0" 304 - 0.0024
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0023
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0012
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET /script.js HTTP/1.0" 304 - 0.0013
+153.237.33.238 - - [30/Mar/2016:18:42:35 +0900] "GET /images/1.png HTTP/1.0" 304 - 0.0012
+153.237.33.238 - - [30/Mar/2016:18:42:36 +0900] "GET /images/2.png HTTP/1.0" 304 - 0.0015
+153.237.33.238 - - [30/Mar/2016:18:42:36 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0028
+153.237.33.238 - - [30/Mar/2016:18:42:36 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:18:42:57 +0900] "POST /notice HTTP/1.0" 302 - 0.0110
+153.237.33.238 - - [30/Mar/2016:18:42:57 +0900] "GET /notice HTTP/1.0" 200 6924 0.0090
+153.237.33.238 - - [30/Mar/2016:18:42:57 +0900] "GET /materialize/font/roboto/Roboto-Medium.woff2 HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:18:42:59 +0900] "GET /config HTTP/1.0" 200 4138 0.0110
+153.237.33.238 - - [30/Mar/2016:18:43:03 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 5428 0.0072
+153.237.33.238 - - [30/Mar/2016:18:43:03 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0016
+153.237.33.238 - - [30/Mar/2016:18:43:07 +0900] "POST /config HTTP/1.0" 302 - 0.0081
+153.237.33.238 - - [30/Mar/2016:18:43:07 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 4835 0.0070
+153.237.33.238 - - [30/Mar/2016:18:43:11 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 4835 0.0069
+153.237.33.238 - - [30/Mar/2016:18:43:11 +0900] "GET /material.css HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:18:43:11 +0900] "GET /style.css HTTP/1.0" 304 - 0.0021
+153.237.33.238 - - [30/Mar/2016:18:43:11 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0016
+153.237.33.238 - - [30/Mar/2016:18:43:11 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0020
+153.237.33.238 - - [30/Mar/2016:18:43:11 +0900] "GET /material.js HTTP/1.0" 304 - 0.0020
+153.237.33.238 - - [30/Mar/2016:18:43:11 +0900] "GET /script.js HTTP/1.0" 304 - 0.0030
+153.237.33.238 - - [30/Mar/2016:18:43:11 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0016
+153.237.33.238 - - [30/Mar/2016:18:43:11 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0008
+153.237.33.238 - - [30/Mar/2016:18:43:12 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0023
+153.237.33.238 - - [30/Mar/2016:18:43:12 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0013
+153.237.33.238 - - [30/Mar/2016:18:43:12 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:18:44:09 +0900] "GET / HTTP/1.0" 200 6924 0.0073
+2016-03-30 18:44:25 - NameError - uninitialized constant ArgmentError:
+	/projects/notice/notice.rb:48:in `check_mail'
+	/projects/notice/app.rb:105:in `block in <class:NoticeWeb>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+153.237.33.238 - - [30/Mar/2016:18:44:25 +0900] "POST /notice HTTP/1.0" 500 153722 0.0766
+153.237.33.238 - - [30/Mar/2016:18:44:27 +0900] "GET /materialize/font/roboto/Roboto-Medium.woff2 HTTP/1.0" 304 - 0.0016
+153.237.33.238 - - [30/Mar/2016:18:44:30 +0900] "POST /notice HTTP/1.0" 302 - 0.0069
+153.237.33.238 - - [30/Mar/2016:18:44:30 +0900] "GET /notice HTTP/1.0" 200 6924 0.0098
+153.237.33.238 - - [30/Mar/2016:18:44:34 +0900] "GET /config HTTP/1.0" 200 4138 0.0057
+153.237.33.238 - - [30/Mar/2016:18:44:42 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 5463 0.0111
+153.237.33.238 - - [30/Mar/2016:18:56:41 +0900] "GET / HTTP/1.0" 200 6924 0.0084
+153.237.33.238 - - [30/Mar/2016:18:56:54 +0900] "POST /notice HTTP/1.0" 302 - 0.0072
+153.237.33.238 - - [30/Mar/2016:18:56:55 +0900] "GET /notice HTTP/1.0" 200 6924 0.0063
+133.130.112.79 - - [30/Mar/2016:18:57:50 +0900] "GET / HTTP/1.0" 200 6924 0.0259
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 5974 0.0112
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0026
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /material.css HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /style.css HTTP/1.0" 304 - 0.0016
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /material.js HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0264
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0012
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:19:05:41 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0301
+153.237.33.238 - - [30/Mar/2016:19:05:45 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 5974 0.0086
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /material.css HTTP/1.0" 304 - 0.0013
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0014
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0008
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0008
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /material.js HTTP/1.0" 304 - 0.0007
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /script.js HTTP/1.0" 304 - 0.0010
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /style.css HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0020
+153.237.33.238 - - [30/Mar/2016:19:05:46 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0008
+153.237.33.238 - - [30/Mar/2016:19:05:52 +0900] "POST /config HTTP/1.0" 302 - 0.0064
+153.237.33.238 - - [30/Mar/2016:19:05:52 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6031 0.0081
+153.237.33.238 - - [30/Mar/2016:19:05:52 +0900] "GET /materialize/font/roboto/Roboto-Medium.woff2 HTTP/1.0" 304 - 0.0012
+133.130.112.79 - - [30/Mar/2016:19:06:28 +0900] "GET / HTTP/1.0" 200 6924 0.0087
+153.237.33.238 - - [30/Mar/2016:19:06:41 +0900] "GET /config/hyoga0216@gmail.com HTTP/1.0" 200 6012 0.0100
+153.237.33.238 - - [30/Mar/2016:19:06:41 +0900] "GET /material.css HTTP/1.0" 304 - 0.0019
+153.237.33.238 - - [30/Mar/2016:19:06:41 +0900] "GET /materialize/css/materialize.css HTTP/1.0" 304 - 0.0015
+153.237.33.238 - - [30/Mar/2016:19:06:41 +0900] "GET /style.css HTTP/1.0" 304 - 0.0013
+153.237.33.238 - - [30/Mar/2016:19:06:41 +0900] "GET /material.js HTTP/1.0" 304 - 0.0015
+153.237.33.238 - - [30/Mar/2016:19:06:41 +0900] "GET /materialize/js/materialize.js HTTP/1.0" 304 - 0.0011
+153.237.33.238 - - [30/Mar/2016:19:06:41 +0900] "GET /footerFixed.js HTTP/1.0" 304 - 0.0008
+153.237.33.238 - - [30/Mar/2016:19:06:41 +0900] "GET /script.js HTTP/1.0" 304 - 0.0009
+153.237.33.238 - - [30/Mar/2016:19:06:41 +0900] "GET /jquery-2.1.4.min.js HTTP/1.0" 304 - 0.0012
+153.237.33.238 - - [30/Mar/2016:19:06:42 +0900] "GET /materialize/font/roboto/Roboto-Light.woff2 HTTP/1.0" 304 - 0.0012
+153.237.33.238 - - [30/Mar/2016:19:06:42 +0900] "GET /materialize/font/roboto/Roboto-Regular.woff2 HTTP/1.0" 304 - 0.0015
+153.237.33.238 - - [30/Mar/2016:19:06:42 +0900] "GET /materialize/font/roboto/Roboto-Bold.woff2 HTTP/1.0" 304 - 0.0008
+52.0.238.61 - - [30/Mar/2016:19:06:44 +0900] "GET /robots.txt HTTP/1.0" 404 509 0.0028
