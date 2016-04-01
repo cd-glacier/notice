@@ -12,6 +12,7 @@ include Clockwork
 @sites_table = "sites2"
 
 every(10.minutes, 'work')  do
+=begin
 	#urlとsearch_word, mail adressをmysqlからとってくる
 	#client = Mysql.connect('localhost', 'root', MYSQL_PASS, 'notice')
 	@client = connect_adapted_mysql()
@@ -20,21 +21,20 @@ every(10.minutes, 'work')  do
 		if noticed[0].to_i == 0 then
 			puts "seeking in " + url, word, mail_adress
 			begin
-				#通知
+ 			#通知
 				notice(id, url, word, mail_adress, num)
 			rescue => e
 				set_noticed_e(id, @sites_table)
 				puts e.message
-=begin
 				content = "エラーが発生したっぽい \n\n" + e.message
 				gmail("hyoga0216@gmail.com", "notice", content)
-=end
 				next
 			ensure
 				puts " "
 			end
 		end
 	end
+=end
 
 	puts "work end"
 end

@@ -103,8 +103,17 @@ class NoticeWeb < Sinatra::Base
 		url = url.encode('UTF-8')
 		#本当にメールアドレスかどうか
 		mail = check_mail(params[:email])
+		word = params[:keyword]
 
-		insert_url(url, params[:keyword], mail, "sites2")
+		insert_url(url, word, mail, "sites2")
+		id = show_id(url, word, mail, "sites2")[0]
+	
+		#insert時点でkeywordがいくつあるのか
+    num = crawl(url, word)
+		title = crawl_title(url)
+		
+		set_num(id, num, "sites2")
+  	set_title(id, title, "sites2")
 
 		redirect "/notice"
 	end

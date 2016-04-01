@@ -10,6 +10,8 @@ require 'validates_email_format_of'
 require 'net/http'
 require 'mysql'
 
+sites_table = "sites2"
+
 #########################################################################################
 
 def gmail(to_adress, from_adress, content)
@@ -144,18 +146,20 @@ def notice(id, url, search_word, adress, before_num)
 	doc.css('a, p, h1, h2, h3, span, svg, div, img>alt').each do |node|
 		#if node.text.include?(search_word.force_encoding(html_charset[:charset])) then
 		if node.text.include?(search_word.force_encoding("UTF-8")) then
-			puts "keyword is discovered!"
 			num = num + 1;
 		end
+		puts num.to_s + " kewords are discoverd!"
 	end
 
-	if num > before_num then
+	if num > before_num.to_i then
 		content = url + "に" + search_word + " が登場したようです。 \n\n通知のOnOff、削除をしたい場合はこちら -> " + stop_url
 		gmail(adress, "notice web", content)
 		set_num(id, num, sites_table)
 		puts "send mail to " + adress
 		#noticed をtrueにする
 		set_noticed_1(id, sites_table)
+	else
+		set_num(id, before_num.to_i, sites_table)
 	end 
 end
 
@@ -168,4 +172,64 @@ def shorten_string(arg)
 	end
 	return arg
 end
+
+####ver2.0####
+
+def crawl(url, word)
+	html_charset =  show_charset(url)
+	num = 0
+
+  doc = Nokogiri::HTML.parse(html_charset[:html], nil, html_charset[:charset])
+	doc.css('a, p, h1, h2, h3, span, svg, div, img>alt').each do |node|
+		if node.text.include?(word.force_encoding("UTF-8")) then
+			num = num + 1;
+		end
+	end
+
+	puts num.to_s + " kewords are discoverd!"
+	return num
+end
+ 
+def crawl_title(url)
+	html_charset =  show_charset(url)
+
+  doc = Nokogiri::HTML.parse(html_charset[:html], nil, html_charset[:charset])
+ 	title = doc.title
+ 	puts title	
+
+	return title
+end 
+
+def show_id(url, word, adress, table)
+  id = -1
+
+	@client = connect_adapted_mysql()
+	@client.query("select id from " + table + " where url = '#{url}' and keyword = '#{word}' and email = '#{adress}'").each do |tmp|
+   id = tmp
+	end
+
+	return id
+end
+
+def set_title(id, title, table)
+ 	@client = connect_adapted_mysql()
+	stmt = @client.prepare("update " + table + " set title = ? where id = ?")
+	stmt.execute title, id 
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
